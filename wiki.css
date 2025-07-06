@@ -1,0 +1,714 @@
+/* Шапка */
+
+/* Картинка логотипа */
+.listimg{
+    display: flex;
+    padding-left: 101px;
+    padding: 16px 100px 16px 101px;
+}
+.listimg img{
+    width: 64px;
+    height: 64px;
+}
+/* Текст в меню */
+main{
+    height: 100%;
+}
+.textmenu .textmenu-main{
+    text-decoration: none;
+    color: rgb(202, 240, 248);
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 24px;
+    cursor: default;
+    text-decoration: underline rgb(144 224 239);
+}
+.textmenu1 a:hover{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 24px;
+    text-decoration: underline rgb(19, 72, 5);
+}
+.textmenu1 a{
+    text-decoration: none;
+    color: rgb(202, 240, 248);
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 24px;
+}
+.textmenu{
+    display: flex;
+    gap: 100px;
+}
+/* Общий флексбокс 2 дивов */
+.listheader{
+    display: flex;
+    justify-content: center;
+    margin: 0px 124px 0px 106px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 5px 8px rebeccapurple;
+}
+
+.listheader nav{
+    display: flex;
+    list-style: none;
+    gap: 120px;
+    font-weight: normal;
+    justify-content: center;
+    padding: 42px 220px 45px 0px; 
+    font-size: 18px;
+}
+/* Обращение к блоку header */
+header{
+    display: flex;
+    justify-content: center;
+    padding: 26px 0px 90px 0px;
+}
+
+
+/* Главная страница */
+/* флексит main и aside */
+.conteiner{
+    display: flex;
+    padding-block-end: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 5px;
+}
+/* aside блок */
+aside{
+    background-color: white;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-grow: 0;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Флекс всех кнопок в aside */
+
+.but{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.but a{
+    color: white;
+    text-decoration: none;
+}
+
+/* кнопка 1 */
+
+
+
+
+
+.but-1{
+    display: flex;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin: 2px;
+    border-radius: 5px;
+}
+/* 1 гайд */
+.Brewery{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    width: 100%;
+    padding-left: 20px;
+    width: 98%;
+}
+.Brewery img{
+    border-radius: 5px;
+}
+/* строки 1 гайда */
+.b1{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: bold;
+    justify-content: center;
+}
+.b2{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    justify-content: start;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.b3,.b4{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+}
+.b5{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    justify-content: start;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.b6{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+}
+.b7{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    justify-content: start;
+    padding-top: 10px;
+}
+.b7 li{
+    text-decoration: none;
+    list-style: decimal;
+    gap: 2px;
+}
+.b8{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    justify-content: start;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.b9,.b10{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+}
+.b11{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+    color: #585454;
+}
+.b11 p{
+    display: flex;
+    justify-content: center;
+    padding-right: 250px;
+}
+.b11 img{
+    width: 80%;
+    height: 80%;
+}
+
+.b12{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    justify-content: start;
+    font-weight: bold;
+}
+.b13,.b15,.b16{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+}
+.b14{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+}
+.b14 li{
+    text-decoration: none;
+    list-style: decimal;
+    gap: 2px;
+    font-weight: bold;
+}
+
+.b17{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+    color: #585454;
+    gap: 1px;
+}
+.b17 p{
+    display: flex;
+    justify-content: center;
+    padding-right: 250px;
+}
+.b17 img{
+    width: 80%;
+    height: 100%;
+}
+
+.b18,.b20{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+}
+.b19{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+    color: #585454;
+    gap: 1px;
+}
+.b19 p{
+    display: flex;
+    justify-content: center;
+    padding-right: 250px;
+}
+.b19 img{
+    width: 80%;
+    height: 100%;
+}
+
+.b21{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+    color: #585454;
+    gap: 1px;
+}
+.b21 p{
+    display: flex;
+    justify-content: center;
+    padding-right: 250px;
+}
+.b21 img{
+    width: 80%;
+    height: 100%;
+}
+
+.b22,.b27,.b34{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    justify-content: start;
+    font-weight: bold;
+}
+.b25,.b23,.b28,.b30,.b32,.b35,.b40{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+    padding-block-end: 5px;
+}
+
+.b36{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+    color: #585454;
+    gap: 1px;
+}
+.b36 p{
+    display: flex;
+    justify-content: center;
+    padding-right: 250px;
+}
+.b36 img{
+    width: 400px;
+}
+.b38{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+    padding-block-end: 5px;
+}
+.b39{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+    padding-block-end: 5px;
+    padding-right: 25px;
+}
+.b42{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+    padding-block-end: 5px;
+}
+
+.b43{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    justify-content: start;
+    padding-top: 10px;
+    padding-block-end: 5px;
+    font-weight: bold;
+}
+
+.b44{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    justify-content: start;
+    padding-top: 2px;
+    padding-block-end: 5px;
+}
+
+/* кнопка 2 */
+.but-2{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    width: 100%;
+    padding-left: 20px;
+    width: 98%;
+    gap: 20px;
+    padding-block-end: 20px;
+}
+
+/* сумари и диталиси */
+.recipe summary{
+    font-weight: bold; 
+    cursor: pointer;  
+
+}
+details{
+    display: flex;
+    flex-direction: column;
+}
+.recipe summary::marker{
+    color: rgb(215, 104, 0); 
+    font-size: 1.2em; 
+}
+.recipe summary:focus {
+    outline: none;  
+    
+  }
+  /* Скрытие базовый маркеров в браузерах */
+summary {
+    list-style: none; 
+}
+
+summary::-webkit-details-marker { 
+    display: none; 
+} 
+summary::marker { 
+    display: none; 
+} 
+/* Обработка значка */
+.recipe summary::before {
+    content: "?"; 
+    display: inline-block; 
+    width: 1em; 
+    text-align: center; 
+    color: rgb(0, 0, 0); 
+  }
+  
+.recipe details[open] summary::before { 
+    content: "⏏"; 
+  }
+
+.num1{
+    display: flex;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    border-radius: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    margin-right: 820px;
+    padding-left: 10px;
+}
+.num1 p{
+    display: flex;
+    color: black;
+    font-style: normal;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.num1 li{
+    list-style: none;
+    padding-left: 1.5em;
+    font-weight: normal;
+    transform: translateY(-20px);
+}
+.num1 li::before{
+    content: "-";
+    color: black;
+    width: 2px;
+    margin-left: -1.5em;
+    padding-right: 0.4em;
+    font-size: 24px;
+}
+.num2{
+    display: flex;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    border-radius: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    margin-right: 820px;
+}
+.num3{
+    display: flex;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    border-radius: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    margin-right: 820px;
+}
+/* строки 2 гайда */
+.c1{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+/* кнопка 3 */
+.but-3{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+
+
+
+:root{
+    --scrollbar-width: 12px;
+    --scrollbar-track-color: #333;
+    --scrollbar-thumb-color: #666;
+    --scrollbar-thumb-hover-color: #888;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--scrollbar-thumb-color);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track{
+    background: var(--scrollbar-track-color);
+}
+::-webkit-scrollbar{
+    width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--scrollbar-thumb-hover-color);
+}
+::-webkit-progress-bar {
+    background: #333; 
+}
+
+::-webkit-progress-value {
+    background: #666; 
+}
+progress {
+    background: #333; 
+    color: #666; 
+}
+
+progress::-moz-progress-bar {
+    background: #666; 
+}
+::-webkit-meter-bar{
+    background: #666;
+}
+
+
+/* main блок */
+/* флексит гайды */
+.gide{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main{
+    height: 100%;
+    background-color: #c0bcbc;
+    display: flex;
+    flex-grow: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    padding-top: 10px;
+}
+.b37{
+    padding-top: 10px;
+    color: #2e2c2c;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    justify-content: start;
+}
+/* футер */
+footer{
+    background-color: rgb(0, 0, 0);
+    nav-index: 1000;
+}
+/* Главный блок футера */
+.fottermain{
+    display: flex;
+    justify-content: center;
+    gap: 516px;
+    list-style: none;
+    padding-block-end: 25px;
+    padding-right: 10px;
+}
+/* 1 блок футера */
+.fot1{
+    color: #585454;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fot1 img{
+    width:46px;
+    height: 29px;
+}
+.fot1 p{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(202, 240, 248);
+}
+/* 2 блок футера */
+.fot2{
+    padding-left: 200px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    padding-top: 4px;
+    gap: 6px;
+}
+.fot2 a{
+    color: rgb(202, 240, 248);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fot2 a:hover{
+    color: rgb(202, 240, 248);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline rgb(144 224 239);
+
+}
+.fottogether{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.impair{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.impair img{
+    display: flex;
+    justify-content: start;
+    padding-left:30px ;
+    padding-top: 20px;
+    width: 66px;
+    height: 66px;
+}
+.impair p{
+    display: flex;
+    color: rgb(202, 240, 248);
+    font-size: 24px;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+.fot2 p{
+    color: rgb(202, 240, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+/* блоки ссылок на вк и ютуб */
+.seti{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.seti li{
+    color: rgb(202, 240, 248);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.seti a{
+    color: rgb(202, 240, 248);
+    text-decoration: none;
+}
+.seti a:hover{
+    text-decoration: underline rgb(144 224 239);
+}
+body{
+    margin: 0;
+}
