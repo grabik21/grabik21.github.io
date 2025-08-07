@@ -420,22 +420,64 @@ body{
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(75, 75, 75);
+    background-image: url('./img/buld.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 main{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 .soon{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 42px;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-variant: small-caps;
+}
+.all-flex-rp{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-block-end: 20px;
+    gap: 10px;
+    width: 50%;
+}
+.element{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 24px;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    padding: 2px;
+}
+.element p{
+    margin: 0;
+    padding: 2px;
+    color: white;
+}
+.element a{
+    padding: 4px;
+    color: white;
+    font-size: 30px;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: left;
+}
+.element a:hover{
+    text-decoration: underline white;
 }
