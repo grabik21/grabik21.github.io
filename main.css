@@ -660,8 +660,8 @@
     }
     .vk img{
         display: flex;
-        height: 150px%;
-        width: 150px%;
+        height: 50%;
+        width: 50%;
     }
     .vk a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
