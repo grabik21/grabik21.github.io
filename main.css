@@ -1081,7 +1081,7 @@
         display: flex;
         flex-direction: column;
         margin: 0%; 
-        width: 100%;
+        width: max-content;
     }
     @keyframes imageanim {
         0% {
