@@ -611,47 +611,48 @@
         font-size: 42px;
     }
     .social-row img{
-        width: 24px;
-        height: 24px;
+        width: 48px;
+        height: 48px;
         padding: 10px;
     }
     .social-row{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 2%;
+        gap: 20px;
     }
     .studio .sicial-row{
         display: flex;
-        gap: 1%;
+        gap: 10px;
     }
     .yt a{
         display: flex;
         background-color: rgb(202, 240, 248);
-        height: 37.5px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 37.5px;
+        width: 150px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
     }
     .yt img{
-        height: 25%;
-        width: 25%;
+        height: 50%;
+        width: 50%;
     }
     .yt a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .vk a{
         background-color: rgb(202, 240, 248);
-        height: 37.5px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 37.5px;
+        width: 150px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
@@ -659,19 +660,19 @@
     }
     .vk img{
         display: flex;
-        height: 25%;
-        width: 25%;
+        height: 150px%;
+        width: 150px%;
     }
     .vk a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .tt a{
         background-color: rgb(202, 240, 248);
-        height: 37.5px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 37.5px;
+        width: 150px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
@@ -679,8 +680,8 @@
     }
     .tt img{
         display: flex;
-        height: 25%;
-        width: 25%;
+        height: 50%;
+        width: 50%;
         border-radius: 30px;
     }
     .tt a:hover{
@@ -688,48 +689,48 @@
     }
     .tg a{
         background-color: rgb(202, 240, 248);
-        height: 37.5px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 37.5px;
+        width: 150px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
     }
     .tg img{
-        height: 25%;
-        width: 25%;
+        height: 50%;
+        width: 50%;
     }
     .tg a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .ds a{
         background-color: rgb(202, 240, 248);
-        height: 37.5px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 37.5px;
+        width: 150px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
     }
     .ds img{
-        height: 25%;
-        width: 25%;
+        height: 50%;
+        width: 50%;
     }
     .ds a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .pinterest a{
         display: flex;
-        height: 37.5px;
+        height: 150px;
         justify-content: center;
         align-items: center;
-        width: 37.5px;
+        width: 150px;
         background-color: rgb(202, 240, 248);
         border-radius: 50px;
         border-style: solid;
@@ -740,16 +741,16 @@
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .pinterest img{
-        height: 25%;
-        width: 25%;
+        height: 50%;
+        width: 50%;
     }
     .studio{
         display: flex;
         gap: 0px;
         flex-direction: column;
         background-color: rgb(202, 240, 248);
-        width: 30px;
-        height: 30px;
+        width: 300px;
+        height: 150px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
