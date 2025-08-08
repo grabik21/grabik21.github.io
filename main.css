@@ -1,573 +1,1148 @@
 /* Шапка */
-
-/* Картинка логотипа */
-.listimg{
-    display: flex;
-    padding-left: 101px;
-    padding: 16px 100px 16px 101px;
-}
-.listimg img{
-    width: 64px;
-    height: 64px;
-}
-/* Текст в меню */
-.textmenu .textmenu-main{
-    text-decoration: none;
-    color: rgb(202, 240, 248);
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: 24px;
-    cursor: default;
-    text-decoration: underline rgb(144 224 239);
-}
-/* Иконки блока соцсетей*/
-.block-social{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.main-social-text{
-    display: flex;
-    color: white;
-    font-weight: bolder;
-    flex-direction: row;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 42px;
-}
-.social-row img{
-    width: 96px;
-    height: 96px;
-    padding: 20px;
-}
-.social-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-}
-.studio .sicial-row{
-    display: flex;
-    gap: 10px;
-}
-.yt a{
-    display: flex;
-    background-color: rgb(202, 240, 248);
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0,180, 216);
-}
-.yt img{
-    height: 100%;
-    width: 100%;
-}
-.yt a:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
-}
-.vk a{
-    background-color: rgb(202, 240, 248);
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0,180, 216);
-}
-.vk img{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-.vk a:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
-}
-.tt a{
-    background-color: rgb(202, 240, 248);
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0,180, 216);
-}
-.tt img{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    border-radius: 30px;
-}
-.tt a:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
-}
-.tg a{
-    background-color: rgb(202, 240, 248);
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0,180, 216);
-}
-.tg img{
-    height: 100%;
-    width: 100%;
-}
-.tg a:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
-}
-.ds a{
-    background-color: rgb(202, 240, 248);
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0,180, 216);
-}
-.ds img{
-    height: 100%;
-    width: 100%;
-}
-.ds a:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
-}
-.pinterest a{
-    display: flex;
-    height: 150px;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    background-color: rgb(202, 240, 248);
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0,180, 216);
-}
-.pinterest a:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
-}
-.pinterest img{
-    height: 100%;
-    width: 100%;
-}
-.studio{
-    display: flex;
-    gap: 0px;
-    flex-direction: column;
-    background-color: rgb(202, 240, 248);
-    width: 300px;
-    height: 150px;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0,180, 216);
-}
-.studio .text-studio{
-    color: rgb(3, 4, 94);
-    font-size: 24px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.studio .img-studio{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    transform: translateY(-45px);
-    gap: 5px;  
-}
-.studio .img-studio img{
-    width: 100px;
-}
-.studio:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
-}
-.textmenu1 a:hover{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: 24px;
-    text-decoration: underline rgb(19, 72, 5);
-}
-.textmenu1 a{
-    text-decoration: none;
-    color: rgb(202, 240, 248);
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: 24px;
-}
-.textmenu{
-    display: flex;
-    gap: 100px;
-}
-/* Общий флексбокс 2 дивов */
-.listheader{
-    display: flex;
-    justify-content: center;
-    margin: 0px 124px 0px 106px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    box-shadow: 0 5px 8px rebeccapurple;
-}
-
-.listheader nav{
-    display: flex;
-    list-style: none;
-    gap: 120px;
-    font-weight: normal;
-    justify-content: center;
-    padding: 42px 220px 45px 0px; 
-    font-size: 18px;
-}
-/* Обращение к блоку header */
-header{
-    display: flex;
-    justify-content: center;
-    padding: 26px 0px 90px 0px;
-}
-
-
-
-
-
-/* главная */
-main{
-    display: flex;
-    flex-direction: column;
-    padding-block-end: 10px;
-    height: 100%;
-}
-
-
-
-
-/* футер */
-footer{
-    background-color: rgb(0, 0, 0);
-    nav-index: 1000;
-}
-/* Главный блок футера */
-.fottermain{
-    display: flex;
-    justify-content: center;
-    gap: 516px;
-    list-style: none;
-    padding-block-end: 25px;
-    padding-right: 10px;
-}
-/* 1 блок футера */
-.fot1{
-    color: #585454;
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.fot1 img{
-    width:46px;
-    height: 29px;
-}
-.fot1 p{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(202, 240, 248);
-}
-/* 2 блок футера */
-.fot2{
-    padding-left: 200px;
-    display: flex;
-    text-decoration: none;
-    flex-direction: column;
-    padding-top: 4px;
-    gap: 6px;
-}
-.fot2 a{
-    color: rgb(202, 240, 248);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.fot2 a:hover{
-    color: rgb(202, 240, 248);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: underline rgb(144 224 239);
-
-}
-.fottogether{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.impair{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-.impair img{
-    display: flex;
-    justify-content: start;
-    padding-left:30px ;
-    padding-top: 20px;
-    width: 66px;
-    height: 66px;
-}
-.impair p{
-    display: flex;
-    color: rgb(202, 240, 248);
-    font-size: 24px;
-    padding-left: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-variant: small-caps;
-    font-weight: bolder;
-}
-.fot2 p{
-    color: rgb(202, 240, 248);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-}
-/* апи и миникарта */
-    #copyText {
-      cursor: pointer;
-      padding: 5px;
+@media (min-width: 601px) {
+    /* Картинка логотипа */
+    .listimg{
+        display: flex;
+        padding-left: 101px;
+        padding: 16px 100px 16px 101px;
     }
-.api{
-    display: flex;
-    font-size: 36px;
-    border-radius: 5px;
-    border-color: #ffffff;
-    border-width: 2px;
-    border-style: solid;
-    width: fit-content;
-    margin-left: 90px;
-    color: white;
-}
-.api-all{
-    display: flex;
-    width: fit-content;
-    gap: 0;
-}
-.por-api{
-    display: flex;
-    align-items: center;
-    margin: 0;
-    transform: translateX(75px);
-    font-size: 48px;
-    color: white;
-    font-weight: bold;
-}
-    #notification {
-      position: fixed;
-      top: 1px;
-      left: 91.5%;
-      transform: translateX(-50%);
-      background-color: rgba(47, 93, 162, 0.7);
-      color: white;
-      padding: 10px 5px 15px 5px;
-      border-radius: 5px;
-      display: none;
-      z-index: 1000;
-      width: 250px;
-      text-align: center;
+    .listimg img{
+        width: 64px;
+        height: 64px;
     }
-
-    #progressBar {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 5px;
-      background-color: #218196;
-      transform-origin: left;
-      animation: shrink 2s linear;
+    /* Текст в меню */
+    .textmenu .textmenu-main{
+        text-decoration: none;
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 24px;
+        cursor: default;
+        text-decoration: underline rgb(144 224 239);
     }
-
-    @keyframes shrink {
-      0% {
-        transform: scaleX(1);
-      }
-      100% {
-        transform: scaleX(0);
-      }
-    }
-.treller iframe{
-    border-radius: 25px;
-    border-color: #ffffff;
-    border-width: 2px;
-    border-style: solid;
-    position: absolute;
-    top: 200px;
-    right: 30px;
-}
-.api a{
-    color: white;
-    padding: 5px;
-    text-decoration: none;
-}
-.treller{
-    display: flex;
-    height: 200px;
-    width: 585px;
-    height: 310px;
-}
-/* Блок миникарты */
-    #embeddedSite {
-      display: flex;
-      justify-content: start;
-      margin-left: -10px;
-      width: 25%; /* Ширина окна */
-      height: 200px; /* Высота окна */
-      border: 2px solid #000000; /* Рамка вокруг окна */
-      transition: height 2s  ease,width 2s  ease;
-
-    }
-    #embeddedSite:hover {
-      width: 50%; /* Ширина окна */
-      height: 500px; /* Высота окна */
-      border: 3px solid #ffffff; /* Рамка вокруг окна */
-      display: block; /* Убедиться, что блок занимает всю ширину */
-      transition: height 2s  ease,width 2s  ease;
-    }
-    .map{
+    /* Иконки блока соцсетей*/
+    .block-social{
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
-    .map-all{
-        display: flex;
-        flex-direction: column;
-    }
-    .textmap{
-        width: 25%; 
-        justify-content: center;
-        padding-left: 30px;
-    }
-    .textmap a{
+    .main-social-text{
         display: flex;
         color: white;
+        font-weight: bolder;
+        flex-direction: row;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 42px;
+    }
+    .social-row img{
+        width: 96px;
+        height: 96px;
+        padding: 20px;
+    }
+    .social-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .studio .sicial-row{
+        display: flex;
+        gap: 10px;
+    }
+    .yt a{
+        display: flex;
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .yt img{
+        height: 100%;
+        width: 100%;
+    }
+    .yt a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .vk a{
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .vk img{
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    .vk a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .tt a{
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .tt img{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+    }
+    .tt a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .tg a{
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .tg img{
+        height: 100%;
+        width: 100%;
+    }
+    .tg a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .ds a{
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .ds img{
+        height: 100%;
+        width: 100%;
+    }
+    .ds a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .pinterest a{
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        background-color: rgb(202, 240, 248);
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .pinterest a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .pinterest img{
+        height: 100%;
+        width: 100%;
+    }
+    .studio{
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        background-color: rgb(202, 240, 248);
+        width: 300px;
+        height: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .studio .text-studio{
+        color: rgb(3, 4, 94);
+        font-size: 24px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .studio .img-studio{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        transform: translateY(-45px);
+        gap: 5px;  
+    }
+    .studio .img-studio img{
+        width: 100px;
+    }
+    .studio:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .textmenu1 a:hover{
         text-decoration: none;
-        width: fit-content;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 24px;
+        text-decoration: underline rgb(19, 72, 5);
+    }
+    .textmenu1 a{
+        text-decoration: none;
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 24px;
+    }
+    .textmenu{
+        display: flex;
+        gap: 100px;
+    }
+    /* Общий флексбокс 2 дивов */
+    .listheader{
+        display: flex;
+        justify-content: center;
+        margin: 0px 124px 0px 106px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        box-shadow: 0 5px 8px rebeccapurple;
+    }
+
+    .listheader nav{
+        display: flex;
+        list-style: none;
+        gap: 120px;
+        font-weight: normal;
+        justify-content: center;
+        padding: 42px 220px 45px 0px; 
+        font-size: 18px;
+    }
+    /* Обращение к блоку header */
+    header{
+        display: flex;
+        justify-content: center;
+        padding: 26px 0px 90px 0px;
+    }
+
+
+
+
+
+    /* главная */
+    main{
+        display: flex;
+        flex-direction: column;
+        padding-block-end: 10px;
+        height: 100%;
+    }
+
+
+
+
+    /* футер */
+    footer{
+        background-color: rgb(0, 0, 0);
+        nav-index: 1000;
+    }
+    /* Главный блок футера */
+    .fottermain{
+        display: flex;
+        justify-content: center;
+        gap: 516px;
+        list-style: none;
+        padding-block-end: 25px;
+        padding-right: 10px;
+    }
+    /* 1 блок футера */
+    .fot1{
+        color: #585454;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fot1 img{
+        width:46px;
+        height: 29px;
+    }
+    .fot1 p{
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(202, 240, 248);
+    }
+    /* 2 блок футера */
+    .fot2{
+        padding-left: 200px;
+        display: flex;
+        text-decoration: none;
+        flex-direction: column;
+        padding-top: 4px;
+        gap: 6px;
+    }
+    .fot2 a{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fot2 a:hover{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline rgb(144 224 239);
+
+    }
+    .fottogether{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .impair{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .impair img{
+        display: flex;
+        justify-content: start;
+        padding-left:30px ;
+        padding-top: 20px;
+        width: 66px;
+        height: 66px;
+    }
+    .impair p{
+        display: flex;
+        color: rgb(202, 240, 248);
+        font-size: 24px;
+        padding-left: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-variant: small-caps;
+        font-weight: bolder;
+    }
+    .fot2 p{
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+    }
+    /* апи и миникарта */
+        #copyText {
+        cursor: pointer;
+        padding: 5px;
+        }
+    .api{
+        display: flex;
         font-size: 36px;
+        border-radius: 5px;
+        border-color: #ffffff;
+        border-width: 2px;
+        border-style: solid;
+        width: fit-content;
+        margin-left: 90px;
+        color: white;
     }
-    .textmap a:hover{
-        text-decoration: underline white;
+    .api-all{
+        display: flex;
+        width: fit-content;
+        gap: 0;
     }
-/* блоки ссылок на вк и ютуб */
-.seti{
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-}
-.seti li{
-    color: rgb(202, 240, 248);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.seti a{
-    color: rgb(202, 240, 248);
-    text-decoration: none;
-}
-.seti a:hover{
-    text-decoration: underline rgb(144 224 239);
-}
-.map{
-    margin-left: 80px;
-}
-/* Тело */
-body{
-    background-image: url("./img/fon.png");
-    background-repeat: no-repeat;
-    background-size: 125% 125%;
-    background-attachment: fixed;
-    height: 100%;
-    transition: background-position 15s ease-in-out;
-    animation: imageanim 24s linear infinite;
-    display: flex;
-    flex-direction: column;
-    margin: 0%; 
-}
-@keyframes imageanim {
-    0% {
-        background-position: 50% 50% ;
+    .por-api{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        transform: translateX(75px);
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
     }
-    12% {
-        background-position: 75% 55% ;
-    }
-    24% {
-        background-position: 50% 50% ;
-    }
-    36% {
-        background-position: 55% 75% ;
-    }
-    48% {
-        background-position: 50% 50% ;
-    }
-    60% {
-        background-position: 25% 45% ;
-    }
-    72% {
-        background-position: 50% 50% ;
-    }
-    84% {
-        background-position: 45% 25% ;
-    }
-    100% {
-        background-position: 50% 50% ;
-    }
-}
+        #notification {
+        position: fixed;
+        top: 1px;
+        left: 91.5%;
+        transform: translateX(-50%);
+        background-color: rgba(47, 93, 162, 0.7);
+        color: white;
+        padding: 10px 5px 15px 5px;
+        border-radius: 5px;
+        display: none;
+        z-index: 1000;
+        width: 250px;
+        text-align: center;
+        }
 
-:root{
-    --scrollbar-width: 12px;
-    --scrollbar-track-color: #333;
-    --scrollbar-thumb-color: #666;
-    --scrollbar-thumb-hover-color: #888;
-}
-::-webkit-scrollbar-thumb{
-    background: var(--scrollbar-thumb-color);
-    border-radius: 6px;
-}
-::-webkit-scrollbar-track{
-    background: var(--scrollbar-track-color);
-}
-::-webkit-scrollbar{
-    width: var(--scrollbar-width);
-}
+        #progressBar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #218196;
+        transform-origin: left;
+        animation: shrink 2s linear;
+        }
 
-::-webkit-scrollbar-thumb:hover{
-    background: var(--scrollbar-thumb-hover-color);
-}
-::-webkit-progress-bar {
-    background: #333; 
-}
+        @keyframes shrink {
+        0% {
+            transform: scaleX(1);
+        }
+        100% {
+            transform: scaleX(0);
+        }
+        }
+    .treller iframe{
+        border-radius: 25px;
+        border-color: #ffffff;
+        border-width: 2px;
+        border-style: solid;
+        position: absolute;
+        top: 200px;
+        right: 30px;
+    }
+    .api a{
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .treller{
+        display: flex;
+        height: 200px;
+        width: 585px;
+        height: 310px;
+    }
+    /* Блок миникарты */
+        #embeddedSite {
+        display: flex;
+        justify-content: start;
+        margin-left: -10px;
+        width: 25%; /* Ширина окна */
+        height: 200px; /* Высота окна */
+        border: 2px solid #000000; /* Рамка вокруг окна */
+        transition: height 2s  ease,width 2s  ease;
 
-::-webkit-progress-value {
-    background: #666; 
-}
-progress {
-    background: #333; 
-    color: #666; 
-}
+        }
+        #embeddedSite:hover {
+        width: 50%; /* Ширина окна */
+        height: 500px; /* Высота окна */
+        border: 3px solid #ffffff; /* Рамка вокруг окна */
+        display: block; /* Убедиться, что блок занимает всю ширину */
+        transition: height 2s  ease,width 2s  ease;
+        }
+        .map{
+            display: flex;
+            flex-direction: column;
+        }
+        .map-all{
+            display: flex;
+            flex-direction: column;
+        }
+        .textmap{
+            width: 25%; 
+            justify-content: center;
+            padding-left: 30px;
+        }
+        .textmap a{
+            display: flex;
+            color: white;
+            text-decoration: none;
+            width: fit-content;
+            font-size: 36px;
+        }
+        .textmap a:hover{
+            text-decoration: underline white;
+        }
+    /* блоки ссылок на вк и ютуб */
+    .seti{
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+    .seti li{
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .seti a{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+    }
+    .seti a:hover{
+        text-decoration: underline rgb(144 224 239);
+    }
+    .map{
+        margin-left: 80px;
+    }
+    /* Тело */
+    body{
+        background-image: url("./img/fon.png");
+        background-repeat: no-repeat;
+        background-size: 125% 125%;
+        background-attachment: fixed;
+        height: 100%;
+        transition: background-position 15s ease-in-out;
+        animation: imageanim 24s linear infinite;
+        display: flex;
+        flex-direction: column;
+        margin: 0%; 
+    }
+    @keyframes imageanim {
+        0% {
+            background-position: 50% 50% ;
+        }
+        12% {
+            background-position: 75% 55% ;
+        }
+        24% {
+            background-position: 50% 50% ;
+        }
+        36% {
+            background-position: 55% 75% ;
+        }
+        48% {
+            background-position: 50% 50% ;
+        }
+        60% {
+            background-position: 25% 45% ;
+        }
+        72% {
+            background-position: 50% 50% ;
+        }
+        84% {
+            background-position: 45% 25% ;
+        }
+        100% {
+            background-position: 50% 50% ;
+        }
+    }
 
-progress::-moz-progress-bar {
-    background: #666; 
+    :root{
+        --scrollbar-width: 12px;
+        --scrollbar-track-color: #333;
+        --scrollbar-thumb-color: #666;
+        --scrollbar-thumb-hover-color: #888;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: var(--scrollbar-thumb-color);
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-track{
+        background: var(--scrollbar-track-color);
+    }
+    ::-webkit-scrollbar{
+        width: var(--scrollbar-width);
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        background: var(--scrollbar-thumb-hover-color);
+    }
+    ::-webkit-progress-bar {
+        background: #333; 
+    }
+
+    ::-webkit-progress-value {
+        background: #666; 
+    }
+    progress {
+        background: #333; 
+        color: #666; 
+    }
+
+    progress::-moz-progress-bar {
+        background: #666; 
+    }
+    ::-webkit-meter-bar{
+        background: #666;
+    }
 }
-::-webkit-meter-bar{
-    background: #666;
+/* Шапка */
+@media (max-width: 600px) {
+    /* Картинка логотипа */
+    .listimg{
+        display: flex;
+        padding-left: 101px;
+        padding: 16px 100px 16px 101px;
+    }
+    .listimg img{
+        width: 64px;
+        height: 64px;
+    }
+    /* Текст в меню */
+    .textmenu .textmenu-main{
+        text-decoration: none;
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 24px;
+        cursor: default;
+        text-decoration: underline rgb(144 224 239);
+    }
+    /* Иконки блока соцсетей*/
+    .block-social{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main-social-text{
+        display: flex;
+        color: white;
+        font-weight: bolder;
+        flex-direction: row;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 42px;
+    }
+    .social-row img{
+        width: 96px;
+        height: 96px;
+        padding: 20px;
+    }
+    .social-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .studio .sicial-row{
+        display: flex;
+        gap: 10px;
+    }
+    .yt a{
+        display: flex;
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .yt img{
+        height: 100%;
+        width: 100%;
+    }
+    .yt a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .vk a{
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .vk img{
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    .vk a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .tt a{
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .tt img{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+    }
+    .tt a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .tg a{
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .tg img{
+        height: 100%;
+        width: 100%;
+    }
+    .tg a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .ds a{
+        background-color: rgb(202, 240, 248);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .ds img{
+        height: 100%;
+        width: 100%;
+    }
+    .ds a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .pinterest a{
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        background-color: rgb(202, 240, 248);
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .pinterest a:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .pinterest img{
+        height: 100%;
+        width: 100%;
+    }
+    .studio{
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+        background-color: rgb(202, 240, 248);
+        width: 300px;
+        height: 150px;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(0,180, 216);
+    }
+    .studio .text-studio{
+        color: rgb(3, 4, 94);
+        font-size: 24px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .studio .img-studio{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        transform: translateY(-45px);
+        gap: 5px;  
+    }
+    .studio .img-studio img{
+        width: 100px;
+    }
+    .studio:hover{
+        box-shadow: 0 5px 50px rgb(184, 146, 255);
+    }
+    .textmenu1 a:hover{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 24px;
+        text-decoration: underline rgb(19, 72, 5);
+    }
+    .textmenu1 a{
+        text-decoration: none;
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 24px;
+    }
+    .textmenu{
+        display: flex;
+        gap: 100px;
+    }
+    /* Общий флексбокс 2 дивов */
+    .listheader{
+        display: flex;
+        justify-content: center;
+        margin: 0px 124px 0px 106px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        box-shadow: 0 5px 8px rebeccapurple;
+    }
+
+    .listheader nav{
+        display: flex;
+        list-style: none;
+        gap: 120px;
+        font-weight: normal;
+        justify-content: center;
+        padding: 42px 220px 45px 0px; 
+        font-size: 18px;
+    }
+    /* Обращение к блоку header */
+    header{
+        display: flex;
+        justify-content: center;
+        padding: 26px 0px 90px 0px;
+    }
+
+
+
+
+
+    /* главная */
+    main{
+        display: flex;
+        flex-direction: column;
+        padding-block-end: 10px;
+        height: 100%;
+    }
+
+
+
+
+    /* футер */
+    footer{
+        background-color: rgb(0, 0, 0);
+        nav-index: 1000;
+    }
+    /* Главный блок футера */
+    .fottermain{
+        display: flex;
+        justify-content: center;
+        gap: 516px;
+        list-style: none;
+        padding-block-end: 25px;
+        padding-right: 10px;
+    }
+    /* 1 блок футера */
+    .fot1{
+        color: #585454;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fot1 img{
+        width:46px;
+        height: 29px;
+    }
+    .fot1 p{
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(202, 240, 248);
+    }
+    /* 2 блок футера */
+    .fot2{
+        padding-left: 200px;
+        display: flex;
+        text-decoration: none;
+        flex-direction: column;
+        padding-top: 4px;
+        gap: 6px;
+    }
+    .fot2 a{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fot2 a:hover{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline rgb(144 224 239);
+
+    }
+    .fottogether{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .impair{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .impair img{
+        display: flex;
+        justify-content: start;
+        padding-left:30px ;
+        padding-top: 20px;
+        width: 66px;
+        height: 66px;
+    }
+    .impair p{
+        display: flex;
+        color: rgb(202, 240, 248);
+        font-size: 24px;
+        padding-left: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-variant: small-caps;
+        font-weight: bolder;
+    }
+    .fot2 p{
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+    }
+    /* апи и миникарта */
+        #copyText {
+        cursor: pointer;
+        padding: 5px;
+        }
+    .api{
+        display: flex;
+        font-size: 36px;
+        border-radius: 5px;
+        border-color: #ffffff;
+        border-width: 2px;
+        border-style: solid;
+        width: fit-content;
+        margin-left: 90px;
+        color: white;
+    }
+    .api-all{
+        display: flex;
+        width: fit-content;
+        gap: 0;
+    }
+    .por-api{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        transform: translateX(75px);
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
+    }
+        #notification {
+        position: fixed;
+        top: 1px;
+        left: 91.5%;
+        transform: translateX(-50%);
+        background-color: rgba(47, 93, 162, 0.7);
+        color: white;
+        padding: 10px 5px 15px 5px;
+        border-radius: 5px;
+        display: none;
+        z-index: 1000;
+        width: 250px;
+        text-align: center;
+        }
+
+        #progressBar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #218196;
+        transform-origin: left;
+        animation: shrink 2s linear;
+        }
+
+        @keyframes shrink {
+        0% {
+            transform: scaleX(1);
+        }
+        100% {
+            transform: scaleX(0);
+        }
+        }
+    .treller iframe{
+        border-radius: 25px;
+        border-color: #ffffff;
+        border-width: 2px;
+        border-style: solid;
+        position: absolute;
+        top: 200px;
+        right: 30px;
+    }
+    .api a{
+        color: white;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .treller{
+        display: flex;
+        height: 200px;
+        width: 585px;
+        height: 310px;
+    }
+    /* Блок миникарты */
+        #embeddedSite {
+        display: none;
+        justify-content: start;
+        margin-left: -10px;
+        width: 25%; /* Ширина окна */
+        height: 200px; /* Высота окна */
+        border: 2px solid #000000; /* Рамка вокруг окна */
+        transition: height 2s  ease,width 2s  ease;
+
+        }
+        #embeddedSite:hover {
+        width: 50%; /* Ширина окна */
+        height: 500px; /* Высота окна */
+        border: 3px solid #ffffff; /* Рамка вокруг окна */
+        display: none; /* Убедиться, что блок занимает всю ширину */
+        transition: height 2s  ease,width 2s  ease;
+        }
+        .map{
+            display: flex;
+            flex-direction: column;
+        }
+        .map-all{
+            display: flex;
+            flex-direction: column;
+        }
+        .textmap{
+            width: 25%; 
+            justify-content: center;
+            padding-left: 30px;
+        }
+        .textmap a{
+            display: flex;
+            color: white;
+            text-decoration: none;
+            width: fit-content;
+            font-size: 36px;
+        }
+        .textmap a:hover{
+            text-decoration: underline white;
+        }
+    /* блоки ссылок на вк и ютуб */
+    .seti{
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+    .seti li{
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .seti a{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+    }
+    .seti a:hover{
+        text-decoration: underline rgb(144 224 239);
+    }
+    .map{
+        margin-left: 80px;
+    }
+    /* Тело */
+    body{
+        background-image: url("./img/fon.png");
+        background-repeat: no-repeat;
+        background-size: 125% 125%;
+        background-attachment: fixed;
+        height: 100%;
+        transition: background-position 15s ease-in-out;
+        animation: imageanim 24s linear infinite;
+        display: flex;
+        flex-direction: column;
+        margin: 0%; 
+    }
+    @keyframes imageanim {
+        0% {
+            background-position: 50% 50% ;
+        }
+        12% {
+            background-position: 75% 55% ;
+        }
+        24% {
+            background-position: 50% 50% ;
+        }
+        36% {
+            background-position: 55% 75% ;
+        }
+        48% {
+            background-position: 50% 50% ;
+        }
+        60% {
+            background-position: 25% 45% ;
+        }
+        72% {
+            background-position: 50% 50% ;
+        }
+        84% {
+            background-position: 45% 25% ;
+        }
+        100% {
+            background-position: 50% 50% ;
+        }
+    }
+
+    :root{
+        --scrollbar-width: 12px;
+        --scrollbar-track-color: #333;
+        --scrollbar-thumb-color: #666;
+        --scrollbar-thumb-hover-color: #888;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: var(--scrollbar-thumb-color);
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-track{
+        background: var(--scrollbar-track-color);
+    }
+    ::-webkit-scrollbar{
+        width: var(--scrollbar-width);
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        background: var(--scrollbar-thumb-hover-color);
+    }
+    ::-webkit-progress-bar {
+        background: #333; 
+    }
+
+    ::-webkit-progress-value {
+        background: #666; 
+    }
+    progress {
+        background: #333; 
+        color: #666; 
+    }
+
+    progress::-moz-progress-bar {
+        background: #666; 
+    }
+    ::-webkit-meter-bar{
+        background: #666;
+    }
 }
