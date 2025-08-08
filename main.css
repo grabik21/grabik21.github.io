@@ -839,7 +839,6 @@
         background-color: rgb(0, 0, 0);
         nav-index: 1000;
         width: 100%;
-        
     }
     /* Главный блок футера */
     .fottermain{
@@ -870,7 +869,7 @@
     }
     /* 2 блок футера */
     .fot2{
-        padding-left: 10%;
+        padding-left: 5%;
         display: flex;
         text-decoration: none;
         flex-direction: column;
@@ -1076,11 +1075,13 @@
         background-repeat: no-repeat;
         background-size: 125% 125%;
         background-attachment: fixed;
+        height: 100%;
         transition: background-position 15s ease-in-out;
         animation: imageanim 24s linear infinite;
         display: flex;
         flex-direction: column;
         margin: 0%; 
+        width: 100%;
     }
     @keyframes imageanim {
         0% {
