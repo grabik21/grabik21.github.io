@@ -580,7 +580,7 @@
     .listimg{
         display: flex;
         padding-left: 101px;
-        padding: 16px 100px 16px 101px;
+        padding: 16px 10% 16px 10%;
     }
     .listimg img{
         width: 64px;
@@ -611,9 +611,9 @@
         font-size: 42px;
     }
     .social-row img{
-        width: 96px;
-        height: 96px;
-        padding: 20px;
+        width: 48px;
+        height: 48px;
+        padding: 10px;
     }
     .social-row{
         display: flex;
@@ -628,30 +628,30 @@
     .yt a{
         display: flex;
         background-color: rgb(202, 240, 248);
-        height: 150px;
+        height: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 75px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
     }
     .yt img{
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
     }
     .yt a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .vk a{
         background-color: rgb(202, 240, 248);
-        height: 150px;
+        height: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 75px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
@@ -659,19 +659,19 @@
     }
     .vk img{
         display: flex;
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
     }
     .vk a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .tt a{
         background-color: rgb(202, 240, 248);
-        height: 150px;
+        height: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 75px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
@@ -679,8 +679,8 @@
     }
     .tt img{
         display: flex;
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
         border-radius: 30px;
     }
     .tt a:hover{
@@ -688,48 +688,48 @@
     }
     .tg a{
         background-color: rgb(202, 240, 248);
-        height: 150px;
+        height: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 75px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
     }
     .tg img{
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
     }
     .tg a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .ds a{
         background-color: rgb(202, 240, 248);
-        height: 150px;
+        height: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 75px;
         border-radius: 50px;
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
     }
     .ds img{
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
     }
     .ds a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .pinterest a{
         display: flex;
-        height: 150px;
+        height: 75px;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 75px;
         background-color: rgb(202, 240, 248);
         border-radius: 50px;
         border-style: solid;
@@ -740,15 +740,15 @@
         box-shadow: 0 5px 50px rgb(184, 146, 255);
     }
     .pinterest img{
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
     }
     .studio{
         display: flex;
         gap: 0px;
         flex-direction: column;
         background-color: rgb(202, 240, 248);
-        width: 300px;
+        width: 150px;
         height: 150px;
         border-radius: 50px;
         border-style: solid;
@@ -809,14 +809,14 @@
         gap: 60px;
         font-weight: normal;
         justify-content: center;
-        padding: 42px 110px 45px 0px; 
+        padding: 42px 15% 45px 0%; 
         font-size: 18px;
     }
     /* Обращение к блоку header */
     header{
         display: flex;
         justify-content: center;
-        padding: 26px 0px 90px 0px;
+        padding: 10% 0px 35% 0px;
     }
 
 
@@ -844,7 +844,7 @@
     .fottermain{
         display: flex;
         justify-content: center;
-        gap: 516px;
+        gap: 5%;
         list-style: none;
         padding-block-end: 25px;
         padding-right: 10px;
@@ -869,7 +869,7 @@
     }
     /* 2 блок футера */
     .fot2{
-        padding-left: 200px;
+        padding-left: 10%;
         display: flex;
         text-decoration: none;
         flex-direction: column;
@@ -1081,7 +1081,7 @@
         display: flex;
         flex-direction: column;
         margin: 0%; 
-        width: max-content;
+        width: 100%;
     }
     @keyframes imageanim {
         0% {
