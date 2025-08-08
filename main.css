@@ -1076,7 +1076,6 @@
         background-repeat: no-repeat;
         background-size: 125% 125%;
         background-attachment: fixed;
-        height: 100%;
         transition: background-position 15s ease-in-out;
         animation: imageanim 24s linear infinite;
         display: flex;
