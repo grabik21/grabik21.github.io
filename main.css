@@ -838,7 +838,7 @@
     footer{
         background-color: rgb(0, 0, 0);
         nav-index: 1000;
-        width: 100%;
+        width: 100vh;
     }
     /* Главный блок футера */
     .fottermain{
