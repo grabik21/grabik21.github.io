@@ -874,18 +874,18 @@
         text-decoration: none;
         flex-direction: column;
         padding-top: 4px;
-        gap: 6px;
+        gap: 1%;
     }
     .fot2 a{
         color: rgb(202, 240, 248);
         text-decoration: none;
-        font-size: 18px;
+        font-size: 10px;
         font-family: Arial, Helvetica, sans-serif;
     }
     .fot2 a:hover{
         color: rgb(202, 240, 248);
         text-decoration: none;
-        font-size: 18px;
+        font-size: 10px;
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: underline rgb(144 224 239);
 
@@ -905,14 +905,14 @@
         justify-content: start;
         padding-left:30px ;
         padding-top: 20px;
-        width: 66px;
-        height: 66px;
+        width: 32px;
+        height: 32px;
     }
     .impair p{
         display: flex;
         color: rgb(202, 240, 248);
-        font-size: 24px;
-        padding-left: 30px;
+        font-size: 18px;
+        padding-left: 1%;
         font-family: Arial, Helvetica, sans-serif;
         font-variant: small-caps;
         font-weight: bolder;
@@ -920,7 +920,7 @@
     .fot2 p{
         color: rgb(202, 240, 248);
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 24px;
+        font-size: 18px;
     }
     /* апи и миникарта */
         #copyText {
