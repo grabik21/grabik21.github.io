@@ -1002,8 +1002,8 @@
         border-width: 2px;
         border-style: solid;
         position: absolute;
-        width: 290px;
-        height: 155px;
+        width: 218px;
+        height: 117px;
         top: 200px;
         right: 5px;
     }
@@ -1014,8 +1014,8 @@
     }
     .treller{
         display: flex;
-        width: 290px;
-        height: 155px;
+        width: 218px;
+        height: 117px;
     }
     /* Блок миникарты */
         #embeddedSite {
