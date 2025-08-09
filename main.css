@@ -807,7 +807,7 @@
     .listheader nav{
         display: flex;
         list-style: none;
-        gap: 60px;
+        gap: 2%;
         font-weight: normal;
         justify-content: center;
         padding: 42px 15% 45px 0%; 
@@ -877,6 +877,7 @@
         flex-direction: column;
         padding-top: 4px;
         gap: 1%;
+        padding-block-end: 10px;
     }
     .fot2 a{
         color: rgb(202, 240, 248);
@@ -1014,16 +1015,16 @@
         #embeddedSite {
         display: none;
         justify-content: start;
-        margin-left: -10px;
-        width: 25%; /* Ширина окна */
-        height: 200px; /* Высота окна */
+        margin-left: 0px;
+        width: 0%; /* Ширина окна */
+        height: 0px; /* Высота окна */
         border: 2px solid #000000; /* Рамка вокруг окна */
         transition: height 2s  ease,width 2s  ease;
 
         }
         #embeddedSite:hover {
-        width: 50%; /* Ширина окна */
-        height: 500px; /* Высота окна */
+        width: 0%; /* Ширина окна */
+        height: 0%; /* Высота окна */
         border: 3px solid #ffffff; /* Рамка вокруг окна */
         display: none; /* Убедиться, что блок занимает всю ширину */
         transition: height 2s  ease,width 2s  ease;
@@ -1037,16 +1038,16 @@
             flex-direction: column;
         }
         .textmap{
-            width: 25%; 
+            width: 0%; 
             justify-content: center;
-            padding-left: 30px;
+            padding-left: 0px;
         }
         .textmap a{
             display: flex;
             color: white;
             text-decoration: none;
             width: fit-content;
-            font-size: 36px;
+            font-size: 0px;
         }
         .textmap a:hover{
             text-decoration: underline white;
@@ -1069,7 +1070,7 @@
         text-decoration: underline rgb(144 224 239);
     }
     .map{
-        margin-left: 80px;
+        margin-left: 0px;
     }
     /* Тело */
     body{
