@@ -945,7 +945,7 @@
         border-color: #ffffff;
         border-width: 2px;
         border-style: solid;
-        width: fit-content;
+        width: 100%;
         margin-left: 1%;
         color: white;
     }
