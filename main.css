@@ -638,6 +638,7 @@
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
+        margin-block-end: 5px;
     }
     .yt img{
         height: 50%;
@@ -657,6 +658,7 @@
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
+        margin-block-end: 5px;
     }
     .vk img{
         display: flex;
@@ -677,6 +679,7 @@
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
+        margin-block-end: 5px;
     }
     .tt img{
         display: flex;
@@ -698,6 +701,7 @@
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
+        margin-block-end: 5px;
     }
     .tg img{
         height: 50%;
@@ -717,6 +721,7 @@
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
+        margin-block-end: 5px;
     }
     .ds img{
         height: 50%;
@@ -736,6 +741,7 @@
         border-style: solid;
         border-width: 5px;
         border-color: rgb(0,180, 216);
+        margin-block-end: 5px;
     }
     .pinterest a:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
@@ -769,7 +775,7 @@
         display: flex;
         justify-content: center;
         flex-direction: row;
-        transform: translateY(-45px);
+        transform: translateY(2px);
         gap: 5px;  
     }
     .studio .img-studio img{
@@ -792,13 +798,13 @@
     }
     .textmenu{
         display: flex;
-        gap: 5%;
+        gap: 10%;
     }
     /* Общий флексбокс 2 дивов */
     .listheader{
         display: flex;
         justify-content: center;
-        margin: 0px 20% 0px 20%;
+        margin: 0px 5% 0px 5%;
         background-color: rgb(0, 0, 0);
         border-radius: 5px;
         box-shadow: 0 5px 8px rebeccapurple;
@@ -807,7 +813,7 @@
     .listheader nav{
         display: flex;
         list-style: none;
-        gap: 2%;
+        gap: 5%;
         font-weight: normal;
         justify-content: center;
         padding: 42px 15% 45px 0%; 
@@ -959,7 +965,7 @@
         #notification {
         position: fixed;
         top: 1px;
-        left: 91.5%;
+        left: 70.5%;
         transform: translateX(-50%);
         background-color: rgba(47, 93, 162, 0.7);
         color: white;
