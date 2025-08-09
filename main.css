@@ -591,7 +591,7 @@
         text-decoration: none;
         color: rgb(202, 240, 248);
         font-family: Arial, Helvetica, sans-serif ;
-        font-size: 24px;
+        font-size: 18px;
         cursor: default;
         text-decoration: underline rgb(144 224 239);
     }
@@ -599,7 +599,7 @@
     .block-social{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1%;
     }
     .main-social-text{
         display: flex;
@@ -608,19 +608,19 @@
         flex-direction: row;
         justify-content: center;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 42px;
+        font-size: 18px;
     }
     .social-row img{
         width: 48px;
         height: 48px;
-        padding: 10px;
+        padding: 2%;
     }
     .social-row{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 2%;
     }
     .studio .sicial-row{
         display: flex;
@@ -781,14 +781,14 @@
     .textmenu1 a:hover{
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif ;
-        font-size: 24px;
+        font-size: 18px;
         text-decoration: underline rgb(19, 72, 5);
     }
     .textmenu1 a{
         text-decoration: none;
         color: rgb(202, 240, 248);
         font-family: Arial, Helvetica, sans-serif ;
-        font-size: 24px;
+        font-size: 18px;
     }
     .textmenu{
         display: flex;
@@ -894,8 +894,8 @@
     }
     .fottogether{
         display: flex;
-        flex-direction: row;
-        gap: 20px;
+        flex-direction: column;
+        gap: 1%;
     }
     .impair{
         display: flex;
@@ -905,7 +905,7 @@
     .impair img{
         display: flex;
         justify-content: start;
-        padding-left:30px ;
+        padding-left:1% ;
         padding-top: 20px;
         width: 32px;
         height: 32px;
@@ -923,6 +923,8 @@
         color: rgb(202, 240, 248);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
+        margin: 0;
+        padding: 0;
     }
     /* апи и миникарта */
         #copyText {
@@ -931,13 +933,13 @@
         }
     .api{
         display: flex;
-        font-size: 36px;
+        font-size: 18px;
         border-radius: 5px;
         border-color: #ffffff;
         border-width: 2px;
         border-style: solid;
         width: fit-content;
-        margin-left: 90px;
+        margin-left: 1%;
         color: white;
     }
     .api-all{
@@ -949,8 +951,7 @@
         display: flex;
         align-items: center;
         margin: 0;
-        transform: translateX(75px);
-        font-size: 48px;
+        font-size: 24px;
         color: white;
         font-weight: bold;
     }
@@ -994,8 +995,8 @@
         border-width: 2px;
         border-style: solid;
         position: absolute;
-        width: 291px;
-        height: 155px;
+        width: 145px;
+        height: 77px;
         top: 200px;
         right: 5px;
     }
@@ -1006,9 +1007,8 @@
     }
     .treller{
         display: flex;
-        height: 200px;
-        width: 585px;
-        height: 310px;
+        width: 145px;
+        height: 77px;
     }
     /* Блок миникарты */
         #embeddedSite {
