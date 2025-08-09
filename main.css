@@ -1034,7 +1034,7 @@
             flex-direction: column;
         }
         .map-all{
-            display: none;
+            display: flex;
             flex-direction: column;
         }
         .textmap{
