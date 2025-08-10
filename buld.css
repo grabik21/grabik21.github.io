@@ -809,7 +809,7 @@ summary::marker {
 .fottermain{
     display: flex;
     justify-content: center;
-    gap: 516px;
+    gap: 5%;
     list-style: none;
     padding-block-end: 25px;
     padding-right: 10px;
