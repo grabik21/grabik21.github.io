@@ -957,10 +957,6 @@ aside{
     top: 0;
     left: 50%;
     z-index: 1000;
-    opacity: 0.2;
-}
-aside:hover{
-    opacity: 1.0;
 }
 /* Флекс всех кнопок в aside */
 
@@ -1237,6 +1233,7 @@ aside:hover{
     border-color: black;
     border-width: 2px;
     border-style: solid;
+    
 }
 
 .but-in-cat a{
