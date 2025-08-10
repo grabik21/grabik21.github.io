@@ -936,7 +936,7 @@ main{
     margin: 0;
     padding-right: 0%;
     gap: 0%;
-    width: 96%;
+    width: 90%;
 
 }
 /* aside блок */
@@ -954,7 +954,7 @@ aside{
     border-style: solid;
     position: sticky;
     top: 0;
-    left: 0;
+    left: 50%;
     z-index: 1000;
     opacity: 0.2;
 }
