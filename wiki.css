@@ -931,8 +931,10 @@ main{
     flex-direction: column;
     padding-block-end: 24px;
     padding-left: 0%;
+    margin: 0;
     padding-right: 0%;
     gap: 0%;
+    width: 100%;
 
 }
 /* aside блок */
@@ -952,8 +954,11 @@ aside{
     top: 0;
     left: 0;
     z-index: 1000;
+    opacity: 0.2;
 }
-
+aside:hover{
+    opacity: 1.0;
+}
 /* Флекс всех кнопок в aside */
 
 .but{
