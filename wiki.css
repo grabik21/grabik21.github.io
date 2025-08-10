@@ -1138,6 +1138,7 @@ aside{
     border-radius: 5px;
     cursor: pointer;
     margin-right: 3%;
+    width: fit-content;
 }
 /* кнопка 3 */
 .but-3{
@@ -1148,7 +1149,7 @@ aside{
     border-radius: 5px;
     cursor: pointer;
     margin-right: 3%;
-
+    width: fit-content;
 }
 /* кнопка 4 */
 .but-4{
@@ -1159,6 +1160,7 @@ aside{
     border-radius: 5px;
     cursor: pointer;
     margin-right: 3%;
+    width: fit-content;
 }
 /* кнопка 3 */
 .but-3{
@@ -1169,6 +1171,7 @@ aside{
     border-radius: 5px;
     cursor: pointer;
     margin-right: 3%;
+    width: fit-content;
 }
 /* поле систем сервера */
 
@@ -1178,24 +1181,28 @@ aside{
     border-width: 2px;
     border-style: solid;
     box-shadow: 0 0 7px rgb(47, 45, 45);
+    width: fit-content;
 }
 .but-2:hover{
     border-color: black;
     border-width: 2px;
     border-style: solid;
     box-shadow: 0 0 7px rgb(47, 45, 45);
+    width: fit-content;
 }
 .but-3:hover{
     border-color: black;
     border-width: 2px;
     border-style: solid;
     box-shadow: 0 0 7px rgb(47, 45, 45);
+    width: fit-content;
 }
 .but-4:hover{
     border-color: black;
     border-width: 2px;
     border-style: solid;
     box-shadow: 0 0 7px rgb(47, 45, 45);
+    width: fit-content;
     
 }
 /* 2 сумари */
@@ -1227,7 +1234,7 @@ aside{
   outline: none;
   border-radius: 5px;
   padding: 5px;
-  width: 99%;
+  width: fit-content;
 }
 .but-in-cat a:hover{
     border-color: black;
