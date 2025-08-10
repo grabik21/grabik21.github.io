@@ -779,8 +779,8 @@
         gap: 5px;  
     }
     .studio .img-studio img{
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        height: 70%;
     }
     .studio:hover{
         box-shadow: 0 5px 50px rgb(184, 146, 255);
