@@ -13,7 +13,6 @@
 /* Текст в меню */
 main{
     height: 100%;
-    width: 100%;
 }
 .textmenu .textmenu-main{
     text-decoration: none;
@@ -921,6 +920,7 @@ main{
 /* флексит main и aside */
 .conteiner{
     display: flex;
+    flex-direction: column;
     padding-block-end: 24px;
     padding-left: 2%;
     padding-right: 2%;
@@ -929,8 +929,10 @@ main{
 /* aside блок */
 aside{
     background-color: rgba(108, 100, 100, 0.5);
-    width: 10%;
-    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
     display: flex;
     flex-grow: 0;
     border-color: black;
@@ -1563,7 +1565,7 @@ progress::-moz-progress-bar {
 .gide{
     display: flex;
     flex-direction: column;
-    gap: 2%;
+    gap: 1%;
 }
 main{
     height: 100%;
@@ -1578,6 +1580,7 @@ main{
     border-color: black;
     border-style: solid;
     padding-top: 10px;
+    width: 100%;
 }
 .b37{
     padding-top: 10px;
