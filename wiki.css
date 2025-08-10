@@ -1,5 +1,9 @@
 /* Шапка */
 @media (min-width: 601px) {
+    .craft{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 /* Картинка логотипа */
 .listimg{
     display: flex;
@@ -559,7 +563,7 @@ aside{
     border-width: 2px;
     border-color: black;
     border-style:solid;
-    width: 50%;   
+    width: 70%;   
 }
 .obimg p{
     font-size: 18px;
@@ -1413,7 +1417,7 @@ aside{
     border-width: 2px;
     border-color: black;
     border-style:solid;
-    width: 50%;   
+    width: 30%;   
 }
 .obimg p{
     font-size: 18px;
