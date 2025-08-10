@@ -854,6 +854,10 @@ body{
 }
 /* Шапка */
 @media (max-width: 480px) and (min-width: 100px) {
+    .craft{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     /* Картинка логотипа */
     .listimg{
         display: flex;
