@@ -77,6 +77,7 @@ header{
     padding-left: 25px;
     padding-right: 25px;
     gap: 5px;
+    width: 96%;
 }
 /* aside блок */
 aside{
@@ -871,6 +872,7 @@ body{
 /* Текст в меню */
 main{
     height: 100%;
+    width: 100%;
 }
     .textmenu .textmenu-main{
         text-decoration: none;
@@ -934,7 +936,7 @@ main{
     margin: 0;
     padding-right: 0%;
     gap: 0%;
-    width: 100%;
+    width: 96%;
 
 }
 /* aside блок */
