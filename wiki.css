@@ -937,6 +937,7 @@ main{
     padding-right: 0%;
     gap: 0%;
     width: 90%;
+    justify-content: center;
 
 }
 /* aside блок */
