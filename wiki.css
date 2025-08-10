@@ -1,5 +1,5 @@
 /* Шапка */
-
+@media (min-width: 601px) {
 /* Картинка логотипа */
 .listimg{
     display: flex;
@@ -846,4 +846,864 @@ body{
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
+}
+}
+/* Шапка */
+@media (max-width: 480px) and (min-width: 100px) {
+    /* Картинка логотипа */
+    .listimg{
+        display: flex;
+        padding-left: 1%;
+        padding: 16px 10% 16px 10%;
+    }
+    .listimg img{
+        width: 64px;
+        height: 64px;
+    }
+/* Текст в меню */
+main{
+    height: 100%;
+}
+    .textmenu .textmenu-main{
+        text-decoration: none;
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        cursor: default;
+        text-decoration: underline rgb(144 224 239);
+    }
+    .textmenu1 a:hover{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        text-decoration: underline rgb(19, 72, 5);
+    }
+    .textmenu1 a{
+        text-decoration: none;
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+    }
+    .textmenu{
+        display: flex;
+        gap: 10%;
+    }
+/* Общий флексбокс 2 дивов */
+    .listheader{
+        display: flex;
+        justify-content: center;
+        margin: 0px 5% 0px 5%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        box-shadow: 0 5px 8px rebeccapurple;
+        width: 100%;
+    }
+
+    .listheader nav{
+        display: flex;
+        list-style: none;
+        gap: 5%;
+        font-weight: normal;
+        justify-content: center;
+        padding: 42px 15% 45px 0%; 
+        font-size: 18px;
+    }
+    /* Обращение к блоку header */
+    header{
+        display: flex;
+        justify-content: center;
+        padding: 10% 0px 35% 0px;
+        width: 100%;
+    }
+
+/* Главная страница */
+/* флексит main и aside */
+.conteiner{
+    display: flex;
+    padding-block-end: 24px;
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 1%;
+}
+/* aside блок */
+aside{
+    background-color: rgba(108, 100, 100, 0.5);
+    width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-grow: 0;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Флекс всех кнопок в aside */
+
+.but{
+    display: flex;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+.but a{
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+}
+
+/* кнопка 1 */
+
+
+
+
+
+/* Главные кнопки */
+.main-but{
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+}
+/* законы */
+.sz-textsss{
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.textb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.sz-text1 p{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.sz-title{
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    font-weight: 500;
+}
+.sz-text{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 1%;
+}
+.rules{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.sz-text p{
+    display: flex;
+    margin: 1px;
+}
+.sz-bold{
+    display: flex;
+    flex-direction: row;
+}
+.tests{
+    display: flex;
+    flex-direction: column;
+}
+/* министерства*/
+.minlist{
+    display: flex;
+    flex-direction: column;
+
+}
+.minlist p{
+    display: flex;
+    justify-content: start;
+    font-size: 36px;
+    margin: 0px;
+    padding-top: 10px;
+}
+.minlist a{
+    display: flex;
+    justify-content: start;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+.minlist a:hover{
+    display: flex;
+    justify-content: start;
+    text-decoration: underline;
+    font-size: 24px;
+    color: black;
+}
+/* структура заполнения министерств */
+.tetle-minist{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    padding-top: 20px;
+}
+.name-minist p{
+    display: flex;
+    font-size: 24px;
+    padding-top: 10px;
+    flex-direction: row;
+    margin: 0px;
+}
+.ceil-minist p{
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+    padding-top: 10px;
+    margin: 0px;
+}
+.structura-minist p{
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+    margin: 0px; 
+    padding-top: 5px; 
+}
+.structura-minist li{
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    margin: 0px; 
+    padding-top: 5px; 
+    padding-left: 1%;
+}
+.obaz-minist p{
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+    margin: 0px; 
+    padding-top: 10px; 
+}
+.text-otdela p{
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+    margin: 0px; 
+    padding: 0px;
+    padding-top: 10px; 
+}
+.text-otdela{
+    display: flex;
+    transform: translateX(-1%);
+}
+.min1 ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.spisok li{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+/* кнопка 2 */
+.but-2{
+    padding: 2%;
+    background-color: rgb(173, 211, 217);
+    color: rgb(0, 0, 0);
+    margin: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 3%;
+}
+/* кнопка 3 */
+.but-3{
+    padding: 2%;
+    background-color: rgb(173, 211, 217);
+    color: rgb(0, 0, 0);
+    margin: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 3%;
+
+}
+/* кнопка 4 */
+.but-4{
+    padding: 2%;
+    background-color: rgb(173, 211, 217);
+    color: rgb(0, 0, 0);
+    margin: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 3%;
+}
+/* кнопка 3 */
+.but-3{
+    padding: 2%;
+    background-color: rgb(173, 211, 217);
+    color: rgb(0, 0, 0);
+    margin: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 3%;
+}
+/* поле систем сервера */
+
+
+.but-1:hover{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 7px rgb(47, 45, 45);
+}
+.but-2:hover{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 7px rgb(47, 45, 45);
+}
+.but-3:hover{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 7px rgb(47, 45, 45);
+}
+.but-4:hover{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 7px rgb(47, 45, 45);
+    
+}
+/* 2 сумари */
+.custom-details {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-right: 3%;
+}
+.custom-summary:hover{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 7px rgb(47, 45, 45);
+}
+.custom-summary {
+  list-style: none;
+  background-color: rgb(173, 211, 217);
+  color: rgb(0, 0, 0);
+  padding: 5%;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  text-align: left;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 99%;
+}
+.but-in-cat a:hover{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.but-in-cat a{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    max-width: fit-content;
+    max-height: fit-content;
+    gap: 0px;
+    margin: 0;
+    flex-wrap: wrap;
+    
+}
+.custom-summary::-webkit-details-marker {
+  display: none;
+}
+
+.custom-summary::after {
+  content: none;
+  float: right;
+}
+
+.custom-details[open] .custom-summary::after {
+  content: none;
+}
+
+.dropdown-content {
+  display: flex;
+  padding-top: 10px;
+  padding-block-end: 5px;
+  gap: 10px;
+  flex-direction: column;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+  z-index: 1;
+  left: 0;
+  width: 99%;
+  box-sizing: border-box;
+  border-top: none;
+  margin-right: 10px;
+}
+/* блок систем */
+/* блок общей информации */
+.obsh-info{
+    display: flex;
+    flex-direction: column;
+}
+.obsh-info p{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    padding-left: 2%;
+    padding-right: 1%;
+}
+.obsh-info a:hover{
+    text-decoration: underline black;
+}
+.obsh-info a{
+    text-decoration: none;
+    color: black;
+}
+/* brewry ditals */
+.custom-detailsb {
+  position: relative;
+  display: inline-block;
+  width: 96%;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-right: 6px;
+  justify-content: center;
+}
+.custom-summaryb:hover{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 7px rgb(47, 45, 45);
+}
+.custom-summaryb {
+  list-style: none;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  width: 99%;
+  border-radius: 5px;
+  padding: 3%;
+  width: 99%;
+  justify-content: center;
+}
+
+
+.b-nam li{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    max-width: fit-content;
+    max-height: fit-content;
+    gap: 0px;
+    margin: 0;
+    flex-wrap: wrap;  
+}
+.b-nam{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+.info-nap{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-block-end: 10px;
+    gap: 10px;
+}
+.custom-summary::-webkit-details-marker {
+  display: none;
+}
+
+.custom-summary::after {
+  content: none;
+  float: right;
+}
+
+.custom-details[open] .custom-summary::after {
+  content: none;
+}
+
+
+
+
+/* brewery */
+.br-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.br-info p{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+.instr-br{
+    display: flex;
+    flex-direction: column;
+}
+.instr-br p{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+.instr-br li{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+}
+.rab-mesto-br{
+    display: flex;
+    flex-direction: column;
+}
+.rab-mesto-br p{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    margin: 0;
+    padding: 5px;
+}
+.rab-mesto-br img{
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    border-style:solid;
+    width: 50%;
+}
+.obimg img{
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    border-style:solid;
+    width: 50%;   
+}
+.obimg p{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+.bochka-br{
+    display: flex;
+    flex-direction: column;
+}
+.bochka-br p{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+    padding-block-end: 20px;
+}
+.bochka-br li{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.bochhz{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    transform: translateX(-20%);
+}
+/* блок спонсорства */
+.dliachego p{
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+}
+.textsponsorcnv p{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+.sz-textsss a:hover{
+    text-decoration: underline black;
+}
+.sz-textsss a{
+    text-decoration: none;
+    color: black;
+}
+.obshi-div-sponsorok{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    padding-left: 9%;
+}
+.sponsor li{
+    display: flex;
+    transform: translateX(-40px);
+    flex-direction: column;
+    font-size: 20px;
+}
+.sponsor p{
+    margin: 0;
+    padding-block-end: 10px;
+}
+.sponsorplus p{
+    margin: 0;
+    padding-block-end: 10px;
+}
+.sponsorplus li{
+    display: flex;
+    transform: translateX(-3%);
+    flex-direction: column;
+    font-size: 20px;
+}
+/* блок команд */
+.chat-command{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+}
+.cmd-1 p{
+    display: flex;
+    font-size: 24px;
+    margin: 0;
+}
+.shar p{
+    display: flex;
+    font-size: 18px;
+    padding-block-end: 10px;
+}
+.shar{
+    display: flex;
+    flex-direction: column;
+    padding-block-end: 10px;
+}
+.shar img{
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: black;
+    border-style:solid;
+    width: 50%;
+}
+
+:root{
+    --scrollbar-width: 12px;
+    --scrollbar-track-color: #333;
+    --scrollbar-thumb-color: #666;
+    --scrollbar-thumb-hover-color: #888;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--scrollbar-thumb-color);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track{
+    background: var(--scrollbar-track-color);
+}
+::-webkit-scrollbar{
+    width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--scrollbar-thumb-hover-color);
+}
+::-webkit-progress-bar {
+    background: #333; 
+}
+
+::-webkit-progress-value {
+    background: #666; 
+}
+progress {
+    background: #333; 
+    color: #666; 
+}
+
+progress::-moz-progress-bar {
+    background: #666; 
+}
+::-webkit-meter-bar{
+    background: #666;
+}
+
+
+/* main блок */
+/* флексит гайды */
+.gide{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+main{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    padding-top: 10px;
+}
+.b37{
+    padding-top: 10px;
+    color: #2e2c2c;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    justify-content: start;
+}
+/* футер */
+footer{
+        background-color: rgb(0, 0, 0);
+        nav-index: 1000;
+        width: 100%;
+    }
+    /* Главный блок футера */
+    .fottermain{
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        list-style: none;
+        padding-block-end: 25px;
+        padding-right: 1px;
+    }
+    /* 1 блок футера */
+    .fot1{
+        color: #585454;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fot1 img{
+        width:46px;
+        height: 29px;
+    }
+    .fot1 p{
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(202, 240, 248);
+    }
+    /* 2 блок футера */
+    .fot2{
+        padding-left: 5%;
+        display: flex;
+        text-decoration: none;
+        flex-direction: column;
+        padding-top: 4px;
+        gap: 1%;
+        padding-block-end: 10px;
+    }
+    .fot2 a{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fot2 a:hover{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: underline rgb(144 224 239);
+
+    }
+    .fottogether{
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+    .impair{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .impair img{
+        display: flex;
+        justify-content: start;
+        padding-left:1% ;
+        padding-top: 20px;
+        width: 32px;
+        height: 32px;
+    }
+    .impair p{
+        display: flex;
+        color: rgb(202, 240, 248);
+        font-size: 18px;
+        padding-left: 1%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-variant: small-caps;
+        font-weight: bolder;
+    }
+    .fot2 p{
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+/* блоки ссылок на вк и ютуб */
+    .seti{
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+    .seti li{
+        color: rgb(202, 240, 248);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .seti a{
+        color: rgb(202, 240, 248);
+        text-decoration: none;
+    }
+    .seti a:hover{
+        text-decoration: underline rgb(144 224 239);
+    }
+    .map{
+        margin-left: 0px;
+    }
+body{
+    background-image: url(./img/title23.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    width: 100%;
+}
 }
