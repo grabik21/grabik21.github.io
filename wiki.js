@@ -18,6 +18,10 @@ buton1.addEventListener('click',()=>{
   block5.style.display = 'none';  
   block6.style.display = 'none';  
   console.log('открываем  1 блок')
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
 });
 buton2.addEventListener('click',()=>{
   block1.style.display = 'none';  
@@ -26,7 +30,11 @@ buton2.addEventListener('click',()=>{
   block4.style.display = 'none';  
   block5.style.display = 'none';  
   block6.style.display = 'none';  
-  console.log('открываем  1 блок')
+  console.log('открываем  2 блок')
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
 });
 buton3.addEventListener('click',()=>{
   block1.style.display = 'none';  
@@ -35,7 +43,11 @@ buton3.addEventListener('click',()=>{
   block4.style.display = 'none';  
   block5.style.display = 'none';  
   block6.style.display = 'none';  
-  console.log('открываем  1 блок')
+  console.log('открываем  3 блок')
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
 });
 buton4.addEventListener('click',()=>{
   block1.style.display = 'none';  
@@ -44,7 +56,11 @@ buton4.addEventListener('click',()=>{
   block4.style.display = 'flex';  
   block5.style.display = 'none';  
   block6.style.display = 'none';  
-  console.log('открываем  1 блок')
+  console.log('открываем  4 блок')
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
 });
 buton5.addEventListener('click',()=>{
   block1.style.display = 'none';  
@@ -53,7 +69,11 @@ buton5.addEventListener('click',()=>{
   block4.style.display = 'none';  
   block5.style.display = 'flex';  
   block6.style.display = 'none';  
-  console.log('открываем  1 блок')
+  console.log('открываем  5 блок')
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
 });
 buton6.addEventListener('click',()=>{
   block1.style.display = 'none';  
@@ -62,7 +82,11 @@ buton6.addEventListener('click',()=>{
   block4.style.display = 'none';  
   block5.style.display = 'none';  
   block6.style.display = 'flex';  
-  console.log('открываем  1 блок')
+  console.log('открываем  6 блок')
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
 });
 const detailsElements = document.querySelectorAll('.auto-open-details');
 const summaryElements = document.querySelectorAll('.custom-summary');
