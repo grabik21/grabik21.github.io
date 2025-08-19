@@ -864,26 +864,32 @@ body{
 #bl1{
     display: flex;
     flex-direction: column;
+    margin-block-end: 10px;
 }
 #miest{
     display: none;
     flex-direction: column;
+    margin-block-end: 10px;
 }
 #bl3{
     display: none;
     flex-direction: column;
+    margin-block-end: 10px;
 }
 #cmd{
     display: none;
     flex-direction: column;
+    margin-block-end: 10px;
 }
 #bl4{
     display: none;
     flex-direction: column;
+    margin-block-end: 10px;
 }
 #bl6{
     display: none;
     flex-direction: column;
+    margin-block-end: 10px;
 }
 
 
