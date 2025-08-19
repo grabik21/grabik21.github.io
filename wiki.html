@@ -24,7 +24,7 @@
             <aside>
                 <div class="but">
                    <details class="custom-details auto-open-details">
-                    <summary class="custom-summary"><a href="">Правила</a></summary>
+                    <summary class="custom-summary"><a href="" id="but1">Правила</a></summary>
                     <div class="dropdown-content">
                         <div class="but-in-cat"><a href="#main-svod">О своде законов</a></div>
                         <div class="but-in-cat"><a href="#alldown">1.0 - Общее положение</a></div>
@@ -34,10 +34,10 @@
                         <div class="but-in-cat"><a href="#sud">5.0 - Суды</a></div>
                     </div>
                     </details>
-                    <div class="but-3"><a href="#miest">Министерства</a></div>
-                    <div class="but-3"><a href="#iaerarhia">Иерархия и баллы</a></div>
+                    <div class="but-3"><a href="#miest" id="but2">Министерства</a></div>
+                    <div class="but-3"><a href="#iaerarhia" id="but3">Иерархия и баллы</a></div>
                    <details class="custom-details auto-open-details">
-                    <summary class="custom-summary"><a href="">Команды сервера</a></summary>
+                    <summary class="custom-summary"><a href="" id="but4">Команды сервера</a></summary>
                     <div class="dropdown-content">
                         <div class="but-in-cat"><a href="#cmd">Команды, начало</a></div>
                         <div class="but-in-cat"><a href="#cmd1">Rp и игровые команды</a></div>
@@ -45,9 +45,9 @@
                         <div class="but-in-cat"><a href="#cmd3">Команды интерактивного чата</a></div>
                     </div>
                     </details>
-                    <div class="but-3"><a href="#sponsorstvo">Спонсорство на сервере</a></div>
+                    <div class="but-3"><a href="#sponsorstvo" id="but5">Спонсорство на сервере</a></div>
                     <details class="custom-details auto-open-details">
-                    <summary class="custom-summary"><a href="">Ситемы сервера</a></summary>
+                    <summary class="custom-summary"><a href="" id="but6">Ситемы сервера</a></summary>
                     <div class="dropdown-content">
                         <div class="but-in-cat"><a href="#obshinfo">Общая информация</a></div>
                         <div class="but-in-cat"><a href="#brew">Алковарение</a></div>
@@ -65,7 +65,7 @@
                 </div>
             </aside>
             <main>
-                <div class="rules">    
+                <div class="rules" id="bl1">    
                     <div class="main-but" id="main-svod">Свод Правил и Законов «ThunderStorm Empire»</div>
                     <div class="sz-textsss">Данный Свод Правил и Законов, далее – “СПЗ”, является официальным документом,  закрепляющий за собой всю структуру нашего сообщества, включая     <b>Дискорд</b>, <b>Майнкрафт сервер</b>,<b> Группы</b> и<b> беседы ВК</b>, и остальные структуры, имеющие отношение к Империи, по которому будут проходить суды, выдаваться наказания и совершаться любые действия по отношению к её участникам.
 
@@ -555,7 +555,7 @@
                     
                 </div>
                         </div>
-                <div class="iaerarhia">
+                <div class="iaerarhia" id="bl3">
                     <div class="main-but" style="padding-top: 15px;" id="iaerarhia">Иерархия «ThunderStorm Empire»</div>     
                     <p style="font-size: 24px;">В нашем сообществе «<b> ThunderStorm Emprire</b>» действует Ранговая иерархия. Она представляет собой систему взаимодействия между участниками сообщества.</p>
                     <div class="sz-textsss" style="padding-left: 20px; transform: translateY(-20px);">▪ Из СПЗ: 1.4 — Все участники Империи должны подчиняться СПЗ и Администрации.</div>
@@ -774,7 +774,7 @@
                         <div class="shar"><img src="./img/playerinfo.png" alt=""></div>
                      </div>
            </div>
-                <div class="sponsorstvo" > 
+                <div class="sponsorstvo" id="bl4"> 
                     <div class="main-but" id="sponsorstvo">Спонсорство на сервере Stormland</div>
                     <div class="dliachego"><p>Для чего нужны спонсоры?</p></div>
                     <div class="textsponsorcnv">
@@ -818,7 +818,7 @@
 
 
                           </div>
-                <div class="system"><div class="main-but">Системы сервера</div>  
+                <div class="system" id="bl6"><div class="main-but">Системы сервера</div>  
                 <div class="obsh-info" id="obshinfo">
                     <p style="display:flex;font-size:  36px; justify-content: center;">общая информация</p>
                     <p>StormLand 3 представляет из себя концепцию единого города. Поэтому на основном сервере МВ закрыт ад и энд. Но есть еще один сервер МФ, в нем вы можете строить свои фермы, маленькие базы, но находится в нем бесконечно не сможете. Также существует система связки чата, все сообщения, отправленные в глобальный чат будут также перенаправленны на другой сервере, тем самым вы сможете обмениваться сообщениями на разных серверах. Еще чтобы появилась возможность не исчерпать запас ресурсов в МВ была добавлена синхронизация ваших данных между МВ и МФ(здоровье,эффект зелья,инвентарь,эндер сундук,броня,уровень и голод).</p>
@@ -1090,25 +1090,6 @@
         
         </div>
     </footer>
-    <script>
-        const detailsElements = document.querySelectorAll('.auto-open-details');
-        const summaryElements = document.querySelectorAll('.custom-summary');
-
-        detailsElements.forEach(detailsElement => {
-            detailsElement.addEventListener('mouseover', () => {
-                detailsElement.setAttribute('open', true);
-            });
-
-            detailsElement.addEventListener('mouseout', () => {
-                detailsElement.removeAttribute('open');
-            });
-        });
-
-        summaryElements.forEach(summaryElement => {
-            summaryElement.addEventListener('click', (event) => {
-                event.preventDefault();
-            });
-        });   
-    </script>    
+    <script src="./wiki.js"> </script>    
 </body>
 </html>
