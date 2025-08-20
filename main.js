@@ -22,3 +22,22 @@
         });
     });
 
+const all = document.getElementById('allll');
+const butopen = document.getElementById('openhist');
+const historys = document.getElementById('history');
+const butclose = document.getElementById('butclose');
+const hed = document.getElementById('head');
+butopen.addEventListener('click',()=>{
+  all.style.display = 'none';
+  historys.style.display = 'flex';
+  window.scrollTo({ 
+    top:0,
+    behavior: 'smooth'
+  })
+  hed.style.backgroundColor = 'white'
+});
+butclose.addEventListener('click',()=>{
+  all.style.display = 'flex';
+  historys.style.display = 'none';
+  hed.style.backgroundColor = ''
+});
