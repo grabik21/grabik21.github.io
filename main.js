@@ -34,7 +34,8 @@ butopen.addEventListener('click',()=>{
     top:0,
     behavior: 'smooth'
   })
-  hed.style.backgroundColor = 'white'
+  hed.style.backgroundColor = '#DCDCDC'
+  historys.style.backgroundColor = '#DCDCDC'
 });
 butclose.addEventListener('click',()=>{
   all.style.display = 'flex';
