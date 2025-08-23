@@ -91,18 +91,20 @@ buton6.addEventListener('click',()=>{
 const detailsElements = document.querySelectorAll('.auto-open-details');
 const summaryElements = document.querySelectorAll('.custom-summary');
 
-detailsElements.forEach(detailsElement => {
-    detailsElement.addEventListener('mouseover', () => {
-        detailsElement.setAttribute('open', true);
+detailsElements.forEach(details => {
+    // При клике на summary
+    details.querySelector('.custom-summary').addEventListener('click', (event) => {
+        event.preventDefault();
+        // Открываем список
+        details.setAttribute('open', '');
     });
 
-    detailsElement.addEventListener('mouseout', () => {
-        detailsElement.removeAttribute('open');
+    // Закрывать список только при выходе мыши за пределы details
+    details.addEventListener('mouseout', (event) => {
+        // Проверяем, что мышь действительно уходит за пределы details
+        // и не остается внутри
+        if (!details.contains(event.relatedTarget)) {
+            details.removeAttribute('open');
+        }
     });
 });
-
-summaryElements.forEach(summaryElement => {
-    summaryElement.addEventListener('click', (event) => {
-        event.preventDefault();
-    });
-});   
