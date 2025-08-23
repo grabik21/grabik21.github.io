@@ -10,84 +10,153 @@ const block3 = document.getElementById('bl3');
 const block4 = document.getElementById('cmd');
 const block5 = document.getElementById('bl4');
 const block6 = document.getElementById('bl6');
-buton1.addEventListener('click',()=>{
-  block1.style.display = 'flex';  
-  block2.style.display = 'none';  
-  block3.style.display = 'none';  
-  block4.style.display = 'none';  
-  block5.style.display = 'none';  
-  block6.style.display = 'none';  
-  console.log('открываем  1 блок')
-  window.scrollTo({
-    top:0,
-    behavior: 'smooth'
-  });
+
+buton1.addEventListener('mousedown',(event)=>{
+  if (event.button === 0) {
+    block1.style.display = 'flex';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+  } else if (event.button === 2) {
+    block1.style.display = 'flex';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    });
+  }
 });
-buton2.addEventListener('click',()=>{
-  block1.style.display = 'none';  
-  block2.style.display = 'flex';  
-  block3.style.display = 'none';  
-  block4.style.display = 'none';  
-  block5.style.display = 'none';  
-  block6.style.display = 'none';  
-  console.log('открываем  2 блок')
-  window.scrollTo({
-    top:0,
-    behavior: 'smooth'
-  });
+
+buton2.addEventListener('mousedown',(event)=>{
+  if (event.button === 0) {
+    block1.style.display = 'none';  
+    block2.style.display = 'flex';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+  } else if (event.button === 2) {
+    block1.style.display = 'none';  
+    block2.style.display = 'flex';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    });
+  }
 });
-buton3.addEventListener('click',()=>{
-  block1.style.display = 'none';  
-  block2.style.display = 'none';  
-  block3.style.display = 'flex';  
-  block4.style.display = 'none';  
-  block5.style.display = 'none';  
-  block6.style.display = 'none';  
-  console.log('открываем  3 блок')
-  window.scrollTo({
-    top:0,
-    behavior: 'smooth'
-  });
+
+buton3.addEventListener('mousedown',(event)=>{
+  if (event.button === 0) {
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'flex';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+  } else if (event.button === 2) {
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'flex';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    });
+  }
 });
-buton4.addEventListener('click',()=>{
-  block1.style.display = 'none';  
-  block2.style.display = 'none';  
-  block3.style.display = 'none';  
-  block4.style.display = 'flex';  
-  block5.style.display = 'none';  
-  block6.style.display = 'none';  
-  console.log('открываем  4 блок')
-  window.scrollTo({
-    top:0,
-    behavior: 'smooth'
-  });
+
+buton4.addEventListener('mousedown',(event)=>{
+  if (event.button === 0) {
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'flex';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+  } else if (event.button === 2) {
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'flex';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    });
+  }
 });
-buton5.addEventListener('click',()=>{
-  block1.style.display = 'none';  
-  block2.style.display = 'none';  
-  block3.style.display = 'none';  
-  block4.style.display = 'none';  
-  block5.style.display = 'flex';  
-  block6.style.display = 'none';  
-  console.log('открываем  5 блок')
-  window.scrollTo({
-    top:0,
-    behavior: 'smooth'
-  });
+
+buton5.addEventListener('mousedown',(event)=>{
+  if (event.button === 0) {
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'flex';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+  } else if (event.button === 2) {
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'flex';  
+    block6.style.display = 'none';  
+    console.log('открываем  6 блок')
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    });
+  }
 });
-buton6.addEventListener('click',()=>{
-  block1.style.display = 'none';  
-  block2.style.display = 'none';  
-  block3.style.display = 'none';  
-  block4.style.display = 'none';  
-  block5.style.display = 'none';  
-  block6.style.display = 'flex';  
-  console.log('открываем  6 блок')
-  window.scrollTo({
-    top:0,
-    behavior: 'smooth'
-  });
+
+buton6.addEventListener('mousedown',(event)=>{
+  if (event.button === 0) {
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'flex';  
+    console.log('открываем  6 блок')
+  } else if (event.button === 2) {
+
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'flex';  
+    console.log('открываем  6 блок')
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    });
+  }
 });
+
+
 const detailsElements = document.querySelectorAll('.auto-open-details');
 const summaryElements = document.querySelectorAll('.custom-summary');
 
@@ -107,4 +176,8 @@ detailsElements.forEach(details => {
             details.removeAttribute('open');
         }
     });
+});
+
+document.addEventListener('contextmenu', (event) => {
+  event.preventDefault();
 });

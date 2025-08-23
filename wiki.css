@@ -114,7 +114,44 @@ aside{
 
 /* кнопка 1 */
 
+.tooltip-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    background-color: rgb(71, 126, 166);
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgb(39, 65, 83);
+    border: solid 1px rgb(39, 65, 83);
+    margin-block-end: 5px;
+    margin-left: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif
+}
 
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: 110%; /* вставляем над элементом */
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: rgb(173, 211, 217);
+    color: #000000;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1000;
+    margin-block-end: 2px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.tooltip-container:hover .tooltip {
+    display: block;
+}
 
 
 
@@ -988,7 +1025,7 @@ main{
 aside{
     background-color: rgba(108, 100, 100, 0.5);
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     height: fit-content;
     display: flex;
@@ -1020,7 +1057,44 @@ aside{
 
 /* кнопка 1 */
 
+.tooltip-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    background-color: rgb(71, 126, 166);
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgb(39, 65, 83);
+    border: solid 1px rgb(39, 65, 83);
+    margin-block-end: 5px;
+    margin-left: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif
+}
 
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: 110%; /* вставляем над элементом */
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: rgb(173, 211, 217);
+    color: #000000;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1000;
+    margin-block-end: 2px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.tooltip-container:hover .tooltip {
+    display: block;
+}
 
 
 
