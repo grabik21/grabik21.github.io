@@ -1,5 +1,6 @@
 /* Шапка */
 @media (min-width: 601px) {
+    
     .craft{
         display: flex;
         flex-direction: column-reverse;
@@ -13,6 +14,62 @@
 .listimg img{
     width: 64px;
     height: 64px;
+}
+/* блок */
+
+#blfaq{
+    display: none;
+    flex-direction: column;
+}
+
+.oneproblem p{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+.discription{
+    display: flex;
+    flex-direction: column;
+}
+.discription p{
+    font-size: 24px;
+    margin-left: 1%;
+}
+.discription img{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 1.5%;
+}
+.anwser-problem{
+    display: flex;
+    flex-direction: column;
+}
+.anwser-problem ul{
+    display: flex;
+    flex-direction: column;
+}
+.anwser-problem ul li{
+    display: flex;
+    flex-direction: column;
+}
+.anwser-problem ul li img{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+.anwser-problem ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.anwser-problem ul li a:hover{
+    text-decoration: underline black;
 }
 /* Текст в меню */
 main{
@@ -936,6 +993,62 @@ body{
 }
 /* Шапка */
 @media (max-width: 480px) and (min-width: 100px) {
+    /* блок */
+
+#blfaq{
+    display: none;
+    flex-direction: column;
+}
+
+.oneproblem p{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+.discription{
+    display: flex;
+    flex-direction: column;
+}
+.discription p{
+    font-size: 24px;
+    margin-left: 1%;
+}
+.discription img{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 1.5%;
+}
+.anwser-problem{
+    display: flex;
+    flex-direction: column;
+}
+.anwser-problem ul{
+    display: flex;
+    flex-direction: column;
+}
+.anwser-problem ul li{
+    display: flex;
+    flex-direction: column;
+}
+.anwser-problem ul li img{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+.anwser-problem ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.anwser-problem ul li a:hover{
+    text-decoration: underline black;
+}
     .craft{
         display: flex;
         flex-direction: column-reverse;

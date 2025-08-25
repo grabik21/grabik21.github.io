@@ -4,12 +4,14 @@ const buton3 = document.getElementById('but3');
 const buton4 = document.getElementById('but4');
 const buton5 = document.getElementById('but5');
 const buton6 = document.getElementById('but6');
+const buton7 = document.getElementById('but7');
 const block1 = document.getElementById('bl1');
 const block2 = document.getElementById('miest');
 const block3 = document.getElementById('bl3');
 const block4 = document.getElementById('cmd');
 const block5 = document.getElementById('bl4');
 const block6 = document.getElementById('bl6');
+const block7 = document.getElementById('blfaq');
 
 buton1.addEventListener('mousedown',(event)=>{
   if (event.button === 0) {
@@ -19,6 +21,7 @@ buton1.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
   } else if (event.button === 2) {
     block1.style.display = 'flex';  
@@ -27,6 +30,7 @@ buton1.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
     window.scrollTo({
       top:0,
@@ -43,6 +47,7 @@ buton2.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
   } else if (event.button === 2) {
     block1.style.display = 'none';  
@@ -51,6 +56,7 @@ buton2.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
     window.scrollTo({
       top:0,
@@ -67,6 +73,7 @@ buton3.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
   } else if (event.button === 2) {
     block1.style.display = 'none';  
@@ -75,6 +82,7 @@ buton3.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
     window.scrollTo({
       top:0,
@@ -91,6 +99,7 @@ buton4.addEventListener('mousedown',(event)=>{
     block4.style.display = 'flex';  
     block5.style.display = 'none';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
   } else if (event.button === 2) {
     block1.style.display = 'none';  
@@ -99,6 +108,7 @@ buton4.addEventListener('mousedown',(event)=>{
     block4.style.display = 'flex';  
     block5.style.display = 'none';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
     window.scrollTo({
       top:0,
@@ -115,6 +125,7 @@ buton5.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'flex';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
   } else if (event.button === 2) {
     block1.style.display = 'none';  
@@ -123,6 +134,7 @@ buton5.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'flex';  
     block6.style.display = 'none';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
     window.scrollTo({
       top:0,
@@ -139,6 +151,7 @@ buton6.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'flex';  
+    block7.style.display = 'flex';  
     console.log('открываем  6 блок')
   } else if (event.button === 2) {
 
@@ -148,6 +161,7 @@ buton6.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'flex';  
+    block7.style.display = 'flex';  
     console.log('открываем  6 блок')
     window.scrollTo({
       top:0,
@@ -156,6 +170,32 @@ buton6.addEventListener('mousedown',(event)=>{
   }
 });
 
+buton7.addEventListener('mousedown',(event)=>{
+  if (event.button === 0) {
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    block7.style.display = 'flex';  
+    console.log('открываем  6 блок')
+  } else if (event.button === 2) {
+
+    block1.style.display = 'none';  
+    block2.style.display = 'none';  
+    block3.style.display = 'none';  
+    block4.style.display = 'none';  
+    block5.style.display = 'none';  
+    block6.style.display = 'none';  
+    block7.style.display = 'flex';  
+    console.log('открываем  7 блок')
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    });
+  }
+});
 
 const detailsElements = document.querySelectorAll('.auto-open-details');
 const summaryElements = document.querySelectorAll('.custom-summary');
