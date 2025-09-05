@@ -22,7 +22,7 @@ buton1.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  1 блок')
   } else if (event.button === 2) {
     block1.style.display = 'flex';  
     block2.style.display = 'none';  
@@ -31,7 +31,7 @@ buton1.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  1 блок')
     window.scrollTo({
       top:0,
       behavior: 'smooth'
@@ -48,7 +48,7 @@ buton2.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  2 блок')
   } else if (event.button === 2) {
     block1.style.display = 'none';  
     block2.style.display = 'flex';  
@@ -57,7 +57,7 @@ buton2.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  2 блок')
     window.scrollTo({
       top:0,
       behavior: 'smooth'
@@ -74,7 +74,7 @@ buton3.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  3 блок')
   } else if (event.button === 2) {
     block1.style.display = 'none';  
     block2.style.display = 'none';  
@@ -83,7 +83,7 @@ buton3.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  3 блок')
     window.scrollTo({
       top:0,
       behavior: 'smooth'
@@ -100,7 +100,7 @@ buton4.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  4 блок')
   } else if (event.button === 2) {
     block1.style.display = 'none';  
     block2.style.display = 'none';  
@@ -109,7 +109,7 @@ buton4.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  4 блок')
     window.scrollTo({
       top:0,
       behavior: 'smooth'
@@ -126,7 +126,7 @@ buton5.addEventListener('mousedown',(event)=>{
     block5.style.display = 'flex';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  5 блок')
   } else if (event.button === 2) {
     block1.style.display = 'none';  
     block2.style.display = 'none';  
@@ -135,7 +135,7 @@ buton5.addEventListener('mousedown',(event)=>{
     block5.style.display = 'flex';  
     block6.style.display = 'none';  
     block7.style.display = 'none';  
-    console.log('открываем  6 блок')
+    console.log('открываем  5 блок')
     window.scrollTo({
       top:0,
       behavior: 'smooth'
@@ -151,7 +151,7 @@ buton6.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'flex';  
-    block7.style.display = 'flex';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
   } else if (event.button === 2) {
 
@@ -161,7 +161,7 @@ buton6.addEventListener('mousedown',(event)=>{
     block4.style.display = 'none';  
     block5.style.display = 'none';  
     block6.style.display = 'flex';  
-    block7.style.display = 'flex';  
+    block7.style.display = 'none';  
     console.log('открываем  6 блок')
     window.scrollTo({
       top:0,
@@ -179,7 +179,7 @@ buton7.addEventListener('mousedown',(event)=>{
     block5.style.display = 'none';  
     block6.style.display = 'none';  
     block7.style.display = 'flex';  
-    console.log('открываем  6 блок')
+    console.log('открываем  7 блок')
   } else if (event.button === 2) {
 
     block1.style.display = 'none';  
