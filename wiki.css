@@ -1007,7 +1007,7 @@ body{
 }
 
 .discription{
-    display: flex;
+    display: column;
     flex-direction: column;
 }
 .discription p{
@@ -1023,15 +1023,15 @@ body{
     margin-left: 1.5%;
 }
 .anwser-problem{
-    display: flex;
+    display: column;
     flex-direction: column;
 }
 .anwser-problem ul{
-    display: flex;
+    display: column;
     flex-direction: column;
 }
 .anwser-problem ul li{
-    display: flex;
+    display: column;
     flex-direction: column;
 }
 .anwser-problem ul li img{
