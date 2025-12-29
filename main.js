@@ -4,7 +4,6 @@
 
     copyTextElement.addEventListener('click', () => {
       const textToCopy = copyTextElement.innerText;
-
       navigator.clipboard.writeText(textToCopy)
         .then(() => {
           notificationElement.style.display = 'block';
@@ -21,4 +20,3 @@
           alert('Не удалось скопировать текст в буфер обмена.');
         });
     });
- 
