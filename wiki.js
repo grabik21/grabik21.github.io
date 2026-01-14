@@ -1,398 +1,204 @@
-const title1 = document.getElementById('num1')
-const title2 = document.getElementById('num2')
-const title3 = document.getElementById('num3')
-const title4 = document.getElementById('num4')
-const testtext = document.getElementById('text')
-
-
-const textscroll = document.getElementById('info-scroll')
-const block = document.getElementById('mainb')
-
-let i = 0
-textscroll.addEventListener('click',()=>{
-    if(i == 0){
-        i = 1 
-        block.classList.remove('block-main')
-        block.classList.add('block-main1')
-        textscroll.textContent = 'Выключить скролл'
+// Управление показом/скрытием секций через навигацию
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebarNav = document.querySelector('.sidebar-nav');
+    if (!sidebarNav) return;
+    
+    // Находим все секции и div с id
+    const allSections = document.querySelectorAll('section[id], .wiki-main > div[id], section div[id]');
+    
+    // Функция для скрытия всех секций
+    function hideAllSections(showWelcome = false) {
+        allSections.forEach(section => {
+            section.classList.remove('active');
+        });
+        
+        // Показываем заголовок и приветственное сообщение когда все секции скрыты
+        if (showWelcome) {
+            const wikiTitle = document.querySelector('h1.wiki-title');
+            const wikiWelcome = document.getElementById('wiki-welcome');
+            if (wikiTitle) {
+                wikiTitle.style.display = 'block';
+                wikiTitle.style.visibility = 'visible';
+                wikiTitle.style.opacity = '1';
+            }
+            if (wikiWelcome) {
+                wikiWelcome.style.display = 'flex';
+                wikiWelcome.style.visibility = 'visible';
+                wikiWelcome.style.opacity = '1';
+                wikiWelcome.style.zIndex = '10';
+                console.log('Приветственное сообщение показано');
+            }
+        }
     }
-    else{
-        i = 0
-        block.classList.remove('block-main1')
-        block.classList.add('block-main')
-        textscroll.textContent = 'Включить скролл'
-
+    
+    // Функция для показа секции
+    function showSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (!section) {
+            console.warn('Секция не найдена:', sectionId);
+            return false;
+        }
+        
+        // Если это div внутри секции, сначала находим родительскую секцию
+        let parentSection = null;
+        if (section.tagName === 'DIV') {
+            // Ищем родительскую секцию
+            parentSection = section.closest('section[id]');
+            
+            // Если не нашли через closest, ищем вручную
+            if (!parentSection) {
+                let parent = section.parentElement;
+                while (parent && parent !== document.body && parent !== document.documentElement) {
+                    if (parent.tagName === 'SECTION' && parent.id) {
+                        parentSection = parent;
+                        break;
+                    }
+                    parent = parent.parentElement;
+                }
+            }
+        }
+        
+        // Скрываем все секции (не показываем приветствие)
+        hideAllSections(false);
+        
+        // Скрываем заголовок и приветственное сообщение
+        const wikiTitle = document.querySelector('h1.wiki-title');
+        const wikiWelcome = document.getElementById('wiki-welcome');
+        if (wikiTitle) {
+            wikiTitle.style.display = 'none';
+            wikiTitle.style.visibility = 'hidden';
+        }
+        if (wikiWelcome) {
+            wikiWelcome.style.display = 'none';
+            wikiWelcome.style.visibility = 'hidden';
+        }
+        
+        // Показываем родительскую секцию ПЕРЕД тем, как показывать дочерний элемент
+        if (parentSection) {
+            parentSection.classList.add('active');
+            console.log('Показана родительская секция:', parentSection.id);
+        }
+        
+        // Показываем саму секцию
+        section.classList.add('active');
+        console.log('Показана секция:', sectionId, 'Тег:', section.tagName, 'ID:', section.id);
+        
+        // Плавная прокрутка к секции
+        requestAnimationFrame(() => {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        
+        return true;
     }
-})
-// подблоки системы
-const obsh = document.getElementById('obshinfo')
-const limit = document.getElementById('limitfarm')
-const brew = document.getElementById('brew')
-const arm = document.getElementById('arm')
-const craft = document.getElementById('craft')
-const vol = document.getElementById('vol')
-const shalk = document.getElementById('shalk')
-const poch = document.getElementById('poch')
-const camech = document.getElementById('camech')
-const gran = document.getElementById('gran')
-const shitel = document.getElementById('shitel')
-const cmd = document.getElementById('cmd')
-// кнопки меню
-const obsh_cd = document.getElementById('infoobsh')
-const limit_cd = document.getElementById('limitik')
-const brew_cd = document.getElementById('brewrr')
-const arm_cd = document.getElementById('armrs')
-const craft_cd = document.getElementById('crafffts')
-const vol_cd = document.getElementById('volleboll')
-const shalk_cd = document.getElementById('shaaalcera')
-const poch_cd = document.getElementById('nakooval')
-const camech_cd = document.getElementById('camneeerez')
-const gran_cd = document.getElementById('granica')
-const shitel_cd = document.getElementById('shiiteli')
-const cmd_cd = document.getElementById('commanf')
-// Блоки основные
-const min = document.getElementById('miest')
-const ierarh = document.getElementById('irar')
-const spons = document.getElementById('spons')
-const sist = document.getElementById('sustem')
-const cat = document.getElementById('catalog')
-// кнопки
-
-
-title1.addEventListener('click',()=>{
-    testtext.textContent = 'Министерства'
-    min.style.display = 'flex'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'none'
-    cat.style.display = 'none'
-
-    obsh.style.display = 'flex'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-title2.addEventListener('click',()=>{
-    testtext.textContent = 'Спонсорство'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'flex'
-    sist.style.display = 'none'
-    cat.style.display = 'none'
-
-    obsh.style.display = 'flex'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-title3.addEventListener('click',()=>{
-    testtext.textContent = 'Иерархия и баллы'
-    min.style.display = 'none'
-    ierarh.style.display = 'flex'
-    spons.style.display = 'none'
-    sist.style.display = 'none'
-    cat.style.display = 'none'
-
-    obsh.style.display = 'flex'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-title4.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'flex'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-// кнопки каталога
-obsh_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'flex'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-limit_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'flex'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-brew_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'flex'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-arm_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'flex'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-craft_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'flex'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-vol_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'flex'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-shalk_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'flex'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-poch_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'flex'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-camech_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'flex'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-gran_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'flex'
-    shitel.style.display = 'none'
-    cmd.style.display = 'none'
-});
-shitel_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'flex'
-    cmd.style.display = 'none'
-});
-cmd_cd.addEventListener('click',()=>{
-    testtext.textContent = 'Ситемы сервера'
-    min.style.display = 'none'
-    ierarh.style.display = 'none'
-    spons.style.display = 'none'
-    sist.style.display = 'flex'
-    cat.style.display = 'flex'
-
-    obsh.style.display = 'none'
-    limit.style.display = 'none'
-    brew.style.display = 'none'
-    arm.style.display = 'none'
-    craft.style.display = 'none'
-    vol.style.display = 'none'
-    shalk.style.display = 'none'
-    poch.style.display = 'none'
-    camech.style.display = 'none'
-    gran.style.display = 'none'
-    shitel.style.display = 'none'
-    cmd.style.display = 'flex'
+    
+    // Функция для обновления состояния подменю
+    function updateSubmenuState() {
+        const allLinks = sidebarNav.querySelectorAll('a[href^="#"]');
+        const allListItems = sidebarNav.querySelectorAll('li');
+        
+        // Убираем класс has-active со всех элементов
+        allListItems.forEach(li => li.classList.remove('has-active'));
+        
+        // Добавляем класс has-active к родителям активных ссылок
+        allLinks.forEach(link => {
+            if (link.classList.contains('active')) {
+                const parentLi = link.closest('li');
+                if (parentLi) {
+                    let currentLi = parentLi.parentElement.closest('li');
+                    while (currentLi) {
+                        currentLi.classList.add('has-active');
+                        currentLi = currentLi.parentElement.closest('li');
+                    }
+                }
+            }
+        });
+    }
+    
+    // Делегирование событий для навигации
+    sidebarNav.addEventListener('click', function(e) {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+            const sectionId = href.substring(1);
+            
+            // Показываем секцию
+            showSection(sectionId);
+            
+            // Обновляем активное состояние ссылок
+            const allLinks = sidebarNav.querySelectorAll('a[href^="#"]');
+            allLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            
+            // Обновляем состояние подменю
+            updateSubmenuState();
+            
+            // Обновляем URL без перезагрузки
+            if (window.history && window.history.pushState) {
+                history.pushState(null, '', href);
+            }
+        }
+    });
+    
+    // Инициализация при загрузке
+    function init() {
+        // Сначала скрываем все секции и показываем приветствие
+        hideAllSections(true);
+        
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            const section = document.getElementById(hash);
+            if (section) {
+                showSection(hash);
+                const activeLink = sidebarNav.querySelector(`a[href="#${hash}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                    updateSubmenuState();
+                }
+                return;
+            }
+        }
+        
+        // При первой загрузке не показываем никакую секцию
+        // Показывается приветственное сообщение
+        const wikiWelcome = document.getElementById('wiki-welcome');
+        const wikiTitle = document.querySelector('h1.wiki-title');
+        if (wikiWelcome) {
+            wikiWelcome.style.display = 'flex';
+            wikiWelcome.style.visibility = 'visible';
+            wikiWelcome.style.opacity = '1';
+            wikiWelcome.style.position = 'absolute';
+            wikiWelcome.style.top = '100px';
+            wikiWelcome.style.left = '0';
+            wikiWelcome.style.right = '0';
+            wikiWelcome.style.zIndex = '10';
+        }
+        if (wikiTitle) {
+            wikiTitle.style.display = 'block';
+            wikiTitle.style.visibility = 'visible';
+        }
+        console.log('Инициализация завершена, показывается приветствие');
+    }
+    
+    init();
+    
+    // Обработка изменения hash в URL
+    window.addEventListener('hashchange', function() {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            showSection(hash);
+            const allLinks = sidebarNav.querySelectorAll('a[href^="#"]');
+            allLinks.forEach(l => {
+                l.classList.remove('active');
+                if (l.getAttribute('href') === `#${hash}`) {
+                    l.classList.add('active');
+                }
+            });
+            updateSubmenuState();
+        }
+    });
 });

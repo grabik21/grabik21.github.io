@@ -1,3 +1,922 @@
+/* ============================================
+   Minecraft Wiki Style - Основные стили
+   ============================================ */
+
+/* Minecraft Wiki Style */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(120, 140, 255, 0.10), transparent 55%),
+        radial-gradient(1000px 650px at 85% 25%, rgba(180, 120, 255, 0.10), transparent 60%),
+        radial-gradient(900px 600px at 65% 85%, rgba(90, 170, 255, 0.08), transparent 55%),
+        linear-gradient(135deg, #171824 0%, #12121b 55%, #151524 100%);
+    color: #e0e0e8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.wiki-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: rgba(35, 35, 45, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(100, 100, 130, 0.3);
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Внутри wiki-container показываем только шапку и основной контент */
+.wiki-container > *:not(.wiki-header):not(.wiki-content) {
+    display: none !important;
+}
+.wiki-header {
+    background: rgba(40, 40, 50, 0.95);
+    border-bottom: 1px solid rgba(120, 120, 150, 0.3);
+    padding: 24px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.wiki-header nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+
+.wiki-header nav a {
+    color: #b0b0c8;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    position: relative;
+    font-weight: 500;
+}
+
+.wiki-header nav a:hover {
+    color: #d0c8e8;
+    background: rgba(120, 110, 150, 0.2);
+}
+
+.wiki-header .current-page {
+    color: #d0c8e8;
+    font-weight: 600;
+    background: rgba(120, 110, 150, 0.25);
+    border: 1px solid rgba(140, 130, 170, 0.4);
+}
+
+.wiki-content {
+    padding: 40px;
+    background: rgba(22, 22, 32, 0.55);
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    border-top: 1px solid rgba(120, 120, 150, 0.18);
+}
+
+/* Боковое навигационное меню */
+.wiki-sidebar {
+    width: 300px;
+    min-width: 300px;
+    flex-direction: column;
+    position: sticky;
+    top: 24px;
+    background: rgba(40, 40, 50, 0.95);
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(100, 100, 130, 0.6) rgba(0, 0, 0, 0.2); /* Firefox */
+}
+
+.wiki-sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.wiki-sidebar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.wiki-sidebar::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 130, 0.6);
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.wiki-sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(120, 110, 150, 0.8);
+}
+
+/* Улучшаем адаптивность бокового меню */
+@media (max-width: 1024px) {
+    .wiki-sidebar {
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
+.sidebar-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #e0d8f0;
+    text-align: left;
+    margin: 0 0 20px 0;
+    padding: 0 0 12px 0;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(140, 130, 170, 0.3);
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav > li {
+    margin: 0 0 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav > li > a {
+    display: block;
+    padding: 12px 16px;
+    color: #d0c8e8;
+    text-decoration: none;
+    border: none;
+    background: rgba(50, 50, 65, 0.7);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-nav > li > a:hover {
+    background: rgba(70, 65, 90, 0.8);
+    color: #e0d8f0;
+}
+
+.sidebar-nav > li > a.active {
+    background: rgba(100, 90, 130, 0.9);
+    color: #f0e8f8;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(100, 90, 130, 0.4);
+}
+
+.sidebar-nav .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+    padding-left: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav > li:hover .submenu,
+.sidebar-nav > li.has-active .submenu {
+    max-height: 1000px;
+    margin-top: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.sidebar-nav .submenu li {
+    margin: 4px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-nav .submenu a {
+    display: block;
+    padding: 8px 12px;
+    color: #c0b8d8;
+    text-decoration: none;
+    border: none;
+    background: rgba(45, 45, 60, 0.6);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size: 0.9em;
+    border-radius: 8px;
+    font-weight: 400;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-nav .submenu a:hover {
+    background: rgba(70, 65, 90, 0.7);
+    color: #d0c8e8;
+}
+
+.sidebar-nav .submenu a.active {
+    background: rgba(90, 80, 120, 0.8);
+    color: #e0d8f0;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(90, 80, 120, 0.3);
+}
+
+.wiki-main {
+    flex: 1;
+    min-width: 0;
+    height: calc(100vh - 48px);
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+    position: relative;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Убеждаемся, что приветствие видно */
+.wiki-main:not(:has(section[id].active)):not(:has(div[id].active)) .wiki-welcome {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Скрываем скроллбар для WebKit браузеров */
+.wiki-main::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+.wiki-main::-webkit-scrollbar-track {
+    display: none;
+    background: transparent;
+}
+
+.wiki-main::-webkit-scrollbar-thumb {
+    display: none;
+    background: transparent;
+}
+
+@media (max-width: 1024px) {
+    .wiki-content {
+        flex-direction: column;
+    }
+    
+    .wiki-sidebar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        max-height: none;
+    }
+}
+
+h1.wiki-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #e9e4ff;
+    border-bottom: 1px solid rgba(160, 150, 200, 0.25);
+    padding: 18px 20px 16px;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.5px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(40, 40, 60, 0.55), rgba(26, 26, 40, 0.35));
+    border-radius: 14px;
+    display: block;
+    z-index: 0;
+}
+
+/* Скрываем заголовок когда показывается любая секция */
+section[id].active ~ h1.wiki-title,
+.wiki-main:has(section[id].active) h1.wiki-title,
+.wiki-main:has(div[id].active) h1.wiki-title {
+    display: none;
+}
+
+/* Приветственное сообщение */
+.wiki-welcome {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 300px);
+    padding: 60px 40px;
+    visibility: visible !important;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    margin-top: 0;
+}
+
+.welcome-message {
+    text-align: center;
+    color: #d0c8e8;
+    background: rgba(40, 40, 60, 0.6);
+    padding: 60px 80px;
+    border-radius: 20px;
+    border: 1px solid rgba(140, 130, 170, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+}
+
+.welcome-message h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #e8e0f8;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+}
+
+.welcome-message p {
+    font-size: 1.3em;
+    color: #c0b8d8;
+    line-height: 1.6;
+}
+
+/* Скрываем приветственное сообщение когда показывается секция */
+section[id].active ~ .wiki-welcome,
+.wiki-main:has(section[id].active) .wiki-welcome,
+.wiki-main:has(div[id].active) .wiki-welcome {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #c0b8d8;
+    border-bottom: 2px solid rgba(120, 110, 150, 0.4);
+    padding-bottom: 0.4em;
+    margin: 1.8em 0 1em 0;
+    letter-spacing: -0.3px;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #b8b0d0;
+    margin: 1.5em 0 0.8em 0;
+    position: relative;
+    padding-left: 0;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #b0a8c8;
+    margin: 1.2em 0 0.6em 0;
+}
+
+h5 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #a8a0c0;
+    margin: 1em 0 0.5em 0;
+}
+
+p {
+    margin: 0.8em 0;
+    text-align: justify;
+    color: #d0d0d8;
+}
+
+.infobox {
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    background: rgba(40, 40, 50, 0.95);
+    padding: 20px;
+    margin: 0 0 1.5em 1.5em;
+    float: right;
+    width: 300px;
+    font-size: 0.95em;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    position: relative;
+}
+
+.infobox-title {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #d0c8e8;
+    font-size: 1.2em;
+    border-bottom: 2px solid rgba(140, 130, 170, 0.4);
+    padding-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    background: rgba(40, 40, 50, 0.8);
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid rgba(80, 80, 110, 0.3);
+    padding: 14px;
+    text-align: left;
+}
+
+table th {
+    background: rgba(50, 50, 65, 0.8);
+    font-weight: 600;
+    color: #d0c8e8;
+}
+
+table td {
+    background: rgba(35, 35, 45, 0.6);
+    color: #c0c0d0;
+    transition: background-color 0.2s ease;
+}
+
+table tr:hover td {
+    background: rgba(55, 55, 70, 0.8);
+}
+
+ul, ol {
+    margin: 0.8em 0;
+    padding-left: 2em;
+    color: #d0d0d8;
+}
+
+li {
+    margin: 0.5em 0;
+    color: #d0d0d8;
+}
+
+a {
+    color: #b8b0d0;
+    text-decoration: none;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: #d0c8e8;
+    border-bottom-color: rgba(140, 130, 170, 0.6);
+}
+
+.toc {
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    background: rgba(40, 40, 50, 0.8);
+    padding: 20px;
+    margin: 2em 0;
+    display: inline-block;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.toc-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #d0c8e8;
+    font-size: 1.2em;
+    border-bottom: 2px solid rgba(140, 130, 170, 0.4);
+    padding-bottom: 10px;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 1.5em;
+    margin: 0;
+}
+
+.toc li {
+    margin: 0.5em 0;
+}
+
+.toc a {
+    color: #b8b0d0;
+}
+
+.toc a:hover {
+    color: #d0c8e8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: rgba(40, 40, 50, 0.5);
+    padding: 4px;
+}
+
+img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    border-color: rgba(140, 130, 170, 0.6);
+}
+
+.section-image {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.section-image img {
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    padding: 4px;
+    background: rgba(40, 40, 50, 0.5);
+    border-radius: 10px;
+}
+
+.section-image figcaption {
+    font-size: 0.9em;
+    color: #a0a0b0;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Скрываем все секции по умолчанию */
+section[id] {
+    margin: 2em 0;
+    padding: 32px;
+    background: rgba(40, 40, 50, 0.7);
+    border-left: 3px solid rgba(140, 130, 170, 0.5);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 0 12px 12px 0;
+    position: relative;
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Показываем активную секцию */
+section[id].active {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    animation: sectionFadeIn 0.5s ease-out forwards;
+}
+
+/* Скрываем div элементы с id по умолчанию (внутри секций и прямые потомки main) */
+section div[id]:not(.active),
+.wiki-main > div[id]:not(.active) {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    margin: 1.5em 0;
+    padding: 24px;
+    background: rgba(45, 45, 55, 0.6);
+    border-left: 3px solid rgba(120, 110, 150, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 10px 10px 0;
+    position: relative;
+}
+
+/* Показываем активный div внутри активной секции - более специфичный селектор */
+section[id].active div[id].active,
+section.active div[id].active,
+section[id].active > div[id].active,
+section.active > div[id].active,
+section[id].active div[id].active,
+section.active div[id].active,
+.wiki-main > div[id].active,
+div[id].active {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: sectionFadeIn 0.5s ease-out forwards;
+}
+
+/* Дополнительное правило для гарантии показа активных элементов */
+section[id].active .active,
+section.active .active {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+@keyframes sectionFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    border-left-color: rgba(160, 150, 190, 0.7);
+}
+
+strong {
+    color: #d0c8e8;
+    font-weight: 600;
+}
+
+em {
+    color: #b0b0c0;
+    font-style: italic;
+}
+
+code {
+    background: rgba(50, 50, 65, 0.8);
+    padding: 3px 8px;
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    color: #c0b8d8;
+    font-family: 'Courier New', monospace;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+blockquote {
+    border-left: 3px solid rgba(140, 130, 170, 0.6);
+    padding-left: 20px;
+    margin: 1em 0;
+    color: #c0c0d0;
+    font-style: italic;
+    background: rgba(45, 45, 55, 0.5);
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+details {
+    background: rgba(40, 40, 50, 0.7);
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    padding: 16px;
+    margin: 1em 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+summary {
+    color: #c0b8d8;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(50, 50, 65, 0.6);
+    border: 1px solid rgba(100, 100, 130, 0.3);
+    border-radius: 8px;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+summary:hover {
+    color: #d0c8e8;
+    background: rgba(60, 60, 75, 0.8);
+    border-color: rgba(140, 130, 170, 0.5);
+}
+
+/* Стили для элементов Brewery гайда */
+.custom-detailsb {
+    background: rgba(40, 40, 50, 0.7);
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    padding: 16px;
+    margin: 1em 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.custom-summaryb {
+    color: #c0b8d8;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 12px;
+    background: rgba(50, 50, 65, 0.6);
+    border: 1px solid rgba(100, 100, 130, 0.3);
+    border-radius: 8px;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    display: block;
+    font-size: 1.1em;
+}
+
+.custom-summaryb:hover {
+    color: #d0c8e8;
+    background: rgba(60, 60, 75, 0.8);
+    border-color: rgba(140, 130, 170, 0.5);
+}
+
+.info-nap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 1em 0;
+}
+
+.b-nam {
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    background: rgba(40, 40, 50, 0.8);
+    padding: 16px;
+    border-radius: 10px;
+    min-width: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.b-nam p {
+    color: #d0c8e8;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid rgba(140, 130, 170, 0.4);
+    padding-bottom: 8px;
+}
+
+.b-nam li {
+    color: #c0c0d0;
+    margin: 6px 0;
+    padding-left: 8px;
+}
+
+/* Стили для изображений в гайдах */
+.obimg {
+    margin: 1em 0;
+}
+
+.obimg img {
+    border: 3px solid #55aaff;
+    box-shadow: 0 0 15px rgba(85, 170, 255, 0.3);
+    background: rgba(20, 20, 30, 0.8);
+    padding: 4px;
+}
+
+.rab-mesto-br img, .bochka-br img {
+    border: 3px solid #55aaff;
+    box-shadow: 0 0 15px rgba(85, 170, 255, 0.3);
+    background: rgba(20, 20, 30, 0.8);
+    padding: 4px;
+}
+
+/* Стили для крафтов */
+.craft {
+    display: inline-block;
+    margin: 8px;
+}
+
+.craft img {
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(40, 40, 50, 0.5);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.craft img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    border-color: rgba(140, 130, 170, 0.6);
+}
+
+/* Scrollbar стилизация */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(30, 30, 40, 0.5);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 130, 0.6);
+    border-radius: 5px;
+    border: 2px solid rgba(30, 30, 40, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(120, 110, 150, 0.8);
+}
+
+/* Дополнительные стили для майнкрафт вики */
+.br-info, .instr-br, .rab-mesto-br, .bochka-br {
+    background: rgba(40, 40, 50, 0.6);
+    padding: 20px;
+    margin: 1em 0;
+    border-left: 3px solid rgba(120, 110, 150, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 10px 10px 0;
+}
+
+.armorstand, .craft {
+    background: rgba(40, 40, 50, 0.6);
+    padding: 20px;
+    margin: 1em 0;
+    border-left: 3px solid rgba(120, 110, 150, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 10px 10px 0;
+}
+
+.obsh-info {
+    background: rgba(40, 40, 50, 0.7);
+    padding: 24px;
+    margin: 1.5em 0;
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+/* Анимация для заголовков */
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 12px rgba(85, 170, 255, 0.6), 2px 2px 4px rgba(0, 0, 0, 0.8); }
+    50% { text-shadow: 0 0 20px rgba(85, 170, 255, 0.9), 2px 2px 4px rgba(0, 0, 0, 0.8); }
+}
+
+/* Дополнительные улучшения для контента */
+.wiki-main {
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Улучшенные списки */
+ul, ol {
+    position: relative;
+}
+
+li::marker {
+    color: #b8b0d0;
+}
+
+/* Улучшенный код */
+code {
+    background: rgba(20, 20, 30, 0.8);
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    padding: 3px 8px;
+    color: #c0b8d8;
+    font-family: 'Courier New', monospace;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+/* Стили для выделения важной информации */
+.important {
+    background: rgba(255, 170, 85, 0.1);
+    border: 2px solid #ffaa55;
+    padding: 12px;
+    margin: 1em 0;
+    box-shadow: 0 0 15px rgba(255, 170, 85, 0.3);
+}
+
+/* Стили для кода команд */
+.command {
+    background: rgba(50, 50, 65, 0.8);
+    border: 1px solid rgba(100, 100, 130, 0.4);
+    padding: 4px 10px;
+    color: #c0b8d8;
+    font-family: 'Courier New', monospace;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 0 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    font-size: 0.9em;
+}
+
+.command:hover {
+    background: rgba(60, 60, 75, 0.9);
+    border-color: rgba(140, 130, 170, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Скрываем footer */
+footer {
+    display: none !important;
+}
+
+/* Улучшенный footer */
+footer {
+    background: rgba(35, 35, 45, 0.95);
+    border-top: 1px solid rgba(100, 100, 130, 0.3);
+    padding: 40px 24px;
+    margin-top: 60px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: #c0c0d0;
+}
+
+/* ============================================
+   Старые стили (для совместимости)
+   ============================================ */
+
 /* Шапка */
 @media (min-width: 601px) {
     .craft{
@@ -847,11 +1766,6 @@ footer{
 }
 .seti a:hover{
     text-decoration: underline rgb(144 224 239);
-}
-body{
-    background: linear-gradient(45deg, #000000, #2a5298);
-    margin: 0;
-}
 }
 /* Шапка */
 @media (max-width: 480px) and (min-width: 100px) {
@@ -1723,12 +2637,3 @@ footer{
     .map{
         margin-left: 0px;
     }
-body{
-    background-image: url(./img/title23.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    width: 100%;
-}
-}
