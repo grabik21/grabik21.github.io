@@ -5,59 +5,83 @@
     display: flex;
     flex-direction: column;
     margin-left: 200px;
-    color: rgb(3, 4, 94);
+    color: #e8e0f8;
     font-size: 36px;
     font-weight: 600;
     margin-block-end: 20px;
-    border: solid 3px rgb(0,180, 216);
-    background-color: rgb(202, 240, 248);
+    border: solid 3px rgba(160, 150, 190, 0.7);
+    background: linear-gradient(135deg, rgba(60, 60, 80, 0.95) 0%, rgba(50, 50, 70, 0.95) 100%);
     cursor: pointer;
     width: fit-content;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .imperia:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(160, 150, 190, 0.5);
+    border-color: rgba(180, 170, 210, 0.9);
 }
 #history{
     display: none;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 2000px;
-    background-color: white;
+    height: 100vh;
+    background: rgba(22, 22, 32, 0.98);
+    z-index: 9999;
+    flex-direction: column;
+    overflow-y: auto;
+}
+#history.active{
+    display: flex;
 }
 #butclose{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    margin-right: 20px;
-    margin-top: 20px;
-    border: solid 3px rgb(0,180, 216);
-    background-color: rgb(202, 240, 248);
-    color: rgb(3, 4, 94);
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: solid 2px rgba(160, 150, 190, 0.7);
+    background: rgba(60, 60, 80, 0.95);
+    color: #e8e0f8;
     cursor: pointer;
     width: fit-content;
-    right: 0.1%;
+    right: 0;
     top: 0;
-    position: absolute;
-    border-radius: 5px;
-    padding: 5px;
+    position: fixed;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    z-index: 10000;
+}
+#butclose:hover{
+    background: rgba(70, 70, 90, 0.95);
+    border-color: rgba(180, 170, 210, 0.9);
+    transform: scale(1.05);
 }
 .soon{
     display: flex;
     flex-direction: column;
-    color: #333;
-    box-shadow: 0px 2px 2px #ff04008c;
-    border: solid 2px #ff6f008c;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #e8e0f8;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    border: solid 2px rgba(160, 150, 190, 0.6);
+    padding: 30px 50px;
     width: fit-content;
-    margin-left: 45%;
-    background-color: rgb(216, 143, 143);
-    color: rgb(75, 29, 29);
-    font-size: 24px;
+    margin: 50px auto;
+    background: rgba(60, 60, 80, 0.8);
+    font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    border-radius: 12px;
 }
 #allll{
     display: flex;
@@ -645,58 +669,84 @@
     .imperia{
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
-    color: rgb(3, 4, 94);
-    font-size: 36px;
+    margin-left: 10%;
+    color: #e8e0f8;
+    font-size: 24px;
     font-weight: 600;
     margin-block-end: 20px;
-    border: solid 3px rgb(0,180, 216);
-    background-color: rgb(202, 240, 248);
+    border: solid 2px rgba(160, 150, 190, 0.7);
+    background: linear-gradient(135deg, rgba(60, 60, 80, 0.95) 0%, rgba(50, 50, 70, 0.95) 100%);
     cursor: pointer;
     width: fit-content;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding: 12px 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .imperia:hover{
-    box-shadow: 0 5px 50px rgb(184, 146, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(160, 150, 190, 0.5);
+    border-color: rgba(180, 170, 210, 0.9);
 }
 #history{
     display: none;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 2000px;
-    background-color: white;
+    height: 100vh;
+    background: rgba(22, 22, 32, 0.98);
+    z-index: 9999;
+    flex-direction: column;
+    overflow-y: auto;
+}
+#history.active{
+    display: flex;
 }
 .soon{
     display: flex;
     flex-direction: column;
-    color: #333;
-    box-shadow: 0px 2px 2px #ff04008c;
-    border: solid 2px #ff6f008c;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #e8e0f8;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    border: solid 2px rgba(160, 150, 190, 0.6);
+    padding: 20px 30px;
     width: fit-content;
-    margin-left: 45%;
-    background-color: rgb(216, 143, 143);
-    color: rgb(75, 29, 29);
+    margin: 30px auto;
+    background: rgba(60, 60, 80, 0.8);
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    border-radius: 10px;
 }
 #butclose{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    margin-right: 20px;
-    margin-top: 20px;
-    border: solid 3px rgb(0,180, 216);
-    background-color: rgb(202, 240, 248);
-    color: rgb(3, 4, 94);
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    border: solid 2px rgba(160, 150, 190, 0.7);
+    background: rgba(60, 60, 80, 0.95);
+    color: #e8e0f8;
     cursor: pointer;
     width: fit-content;
-    right: 0.1%;
+    right: 0;
     top: 0;
-    position: absolute;
+    position: fixed;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    z-index: 10000;
+}
+#butclose:hover{
+    background: rgba(70, 70, 90, 0.95);
+    border-color: rgba(180, 170, 210, 0.9);
+    transform: scale(1.05);
 }
 #allll{
     display: flex;

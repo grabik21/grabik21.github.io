@@ -247,6 +247,7 @@ body {
     position: relative;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
+    background: transparent;
 }
 
 /* Убеждаемся, что приветствие видно */
@@ -316,12 +317,50 @@ body {
     .wiki-main {
         height: auto;
         max-height: none;
+        padding-right: 0;
     }
     
     h1.wiki-title {
         font-size: 2em;
         padding: 16px 18px;
         margin: 0 0 24px 0;
+    }
+    
+    .b-nam {
+        min-width: 100%;
+        padding: 20px;
+    }
+    
+    .info-nap {
+        gap: 18px;
+    }
+    
+    table {
+        font-size: 13px;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    table th,
+    table td {
+        padding: 12px 10px;
+    }
+    
+    .custom-detailsb,
+    details {
+        padding: 18px;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .obimg {
+        flex-direction: column !important;
+    }
+    
+    .obimg img {
+        width: 100% !important;
     }
     
     .wiki-welcome {
@@ -410,6 +449,49 @@ body {
         margin: 1.2em 0;
     }
     
+    .b-nam {
+        min-width: 100%;
+        padding: 18px;
+    }
+    
+    .info-nap {
+        gap: 16px;
+    }
+    
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    table th,
+    table td {
+        padding: 10px 8px;
+    }
+    
+    .custom-detailsb,
+    details {
+        padding: 16px;
+    }
+    
+    .custom-summaryb,
+    summary {
+        padding: 12px;
+        font-size: 1.05em;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .obimg {
+        flex-direction: column !important;
+    }
+    
+    .obimg img {
+        width: 100% !important;
+    }
+    
     .wiki-welcome {
         min-height: calc(100vh - 180px);
         padding: 30px 20px;
@@ -427,6 +509,73 @@ body {
     
     .welcome-message p {
         font-size: 1em;
+    }
+    
+    .b-nam {
+        min-width: 100%;
+        padding: 18px;
+    }
+    
+    .b-nam li {
+        margin: 8px 0;
+        padding: 8px 12px;
+        padding-left: 20px;
+        font-size: 0.9em;
+    }
+    
+    .info-nap {
+        gap: 16px;
+    }
+    
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    table th,
+    table td {
+        padding: 10px 8px;
+        min-width: 70px;
+    }
+    
+    .custom-detailsb,
+    details {
+        padding: 16px;
+    }
+    
+    .custom-summaryb,
+    summary {
+        padding: 12px;
+        font-size: 1.05em;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .obimg {
+        flex-direction: column !important;
+    }
+    
+    .obimg img {
+        width: 100% !important;
+    }
+    
+    .rab-mesto-br img,
+    .bochka-br img {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    
+    #armorstand .rab-mesto-br img,
+    #vol .rab-mesto-br img,
+    #poch .rab-mesto-br img,
+    #camech .rab-mesto-br img,
+    #shitel .rab-mesto-br img {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -560,16 +709,139 @@ body {
     
     table {
         font-size: 13px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    table th,
+    table td {
+        padding: 10px 8px;
+        font-size: 12px;
+        min-width: 80px;
+    }
+    
+    .b-nam {
+        min-width: 100%;
+        padding: 16px;
+    }
+    
+    .b-nam li {
+        margin: 8px 0;
+        padding: 8px 10px;
+        padding-left: 18px;
+        font-size: 0.9em;
+    }
+    
+    .info-nap {
+        gap: 12px;
+    }
+    
+    .custom-detailsb,
+    details {
+        padding: 14px;
+    }
+    
+    .custom-summaryb,
+    summary {
+        padding: 12px;
+        font-size: 1em;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .obimg {
+        flex-direction: column !important;
+    }
+    
+    .obimg img {
+        width: 100% !important;
+    }
+    
+    .rab-mesto-br img,
+    .bochka-br img {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    
+    #armorstand .rab-mesto-br img,
+    #vol .rab-mesto-br img,
+    #poch .rab-mesto-br img,
+    #camech .rab-mesto-br img,
+    #shitel .rab-mesto-br img {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
     
     .infobox {
         padding: 16px;
         margin: 16px 0;
+        width: 100%;
+        float: none;
     }
     
     .infobox-title {
         font-size: 1.1em;
         margin-bottom: 12px;
+    }
+    
+    .b-nam {
+        min-width: 100%;
+        padding: 16px;
+    }
+    
+    .b-nam li {
+        margin: 8px 0;
+        padding: 8px 10px;
+        padding-left: 16px;
+        font-size: 0.9em;
+    }
+    
+    .info-nap {
+        gap: 12px;
+    }
+    
+    .custom-detailsb,
+    details {
+        padding: 14px;
+    }
+    
+    .custom-summaryb,
+    summary {
+        padding: 12px;
+        font-size: 1em;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .obimg {
+        flex-direction: column !important;
+    }
+    
+    .obimg img {
+        width: 100% !important;
+    }
+    
+    .rab-mesto-br img,
+    .bochka-br img {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    
+    #armorstand .rab-mesto-br img,
+    #vol .rab-mesto-br img,
+    #poch .rab-mesto-br img,
+    #camech .rab-mesto-br img,
+    #shitel .rab-mesto-br img {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -613,6 +885,74 @@ body {
     section div[id],
     .wiki-main > div[id] {
         padding: 14px;
+    }
+    
+    .b-nam {
+        padding: 14px;
+    }
+    
+    .b-nam li {
+        margin: 8px 0;
+        padding: 8px 10px;
+        padding-left: 16px;
+        font-size: 0.9em;
+    }
+    
+    .info-nap {
+        gap: 10px;
+    }
+    
+    table {
+        font-size: 11px;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    table th,
+    table td {
+        padding: 8px 6px;
+        font-size: 11px;
+        min-width: 60px;
+    }
+    
+    .custom-detailsb,
+    details {
+        padding: 12px;
+    }
+    
+    .custom-summaryb,
+    summary {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .obimg {
+        flex-direction: column !important;
+    }
+    
+    .obimg img {
+        width: 100% !important;
+    }
+    
+    .rab-mesto-br img,
+    .bochka-br img {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    
+    #armorstand .rab-mesto-br img,
+    #vol .rab-mesto-br img,
+    #poch .rab-mesto-br img,
+    #camech .rab-mesto-br img,
+    #shitel .rab-mesto-br img {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -1028,97 +1368,161 @@ blockquote {
 }
 
 details {
-    background: rgba(40, 40, 50, 0.7);
-    border: 1px solid rgba(100, 100, 130, 0.4);
-    padding: 16px;
-    margin: 1em 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    border-left: 3px solid rgba(140, 130, 170, 0.5);
+    background: rgba(45, 45, 60, 0.85);
+    border: 2px solid rgba(120, 110, 150, 0.5);
+    padding: 20px;
+    margin: 1.5em 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border-left: 4px solid rgba(160, 150, 190, 0.7);
+
 }
 
 summary {
-    color: #c0b8d8;
+    color: #d8d0e8;
     font-weight: 600;
     cursor: pointer;
-    padding: 12px;
-    background: rgba(50, 50, 65, 0.6);
-    border: 1px solid rgba(100, 100, 130, 0.3);
-    border-radius: 8px;
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    padding: 14px 16px;
+    background: rgba(60, 60, 80, 0.8);
+    border: 2px solid rgba(140, 130, 170, 0.5);
+    border-radius: 10px;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
     display: block;
-    font-size: 1.1em;
-    margin-bottom: 8px;
+    font-size: 1.15em;
+    margin-bottom: 12px;
 }
 
 summary:hover {
-    color: #d0c8e8;
-    background: rgba(60, 60, 75, 0.8);
-    border-color: rgba(140, 130, 170, 0.5);
+    color: #f0e8f8;
+    background: rgba(70, 70, 90, 0.95);
+    border-color: rgba(160, 150, 190, 0.7);
+    transform: translateX(4px);
 }
 
 details[open] {
-    background: rgba(45, 45, 55, 0.8);
-    border-left-color: rgba(160, 150, 190, 0.7);
+    background: rgba(50, 50, 70, 0.9);
+    border-left-color: rgba(180, 170, 210, 0.9);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Стили для элементов Brewery гайда */
 .custom-detailsb {
-    background: rgba(40, 40, 50, 0.7);
-    border: 1px solid rgba(100, 100, 130, 0.4);
-    padding: 16px;
-    margin: 1em 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    background: rgba(45, 45, 60, 0.85);
+    border: 2px solid rgba(120, 110, 150, 0.5);
+    padding: 20px;
+    margin: 1.5em 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border-left: 4px solid rgba(160, 150, 190, 0.7);
+    
 }
 
 .custom-summaryb {
-    color: #c0b8d8;
+    color: #d8d0e8;
     font-weight: 600;
     cursor: pointer;
-    padding: 12px;
-    background: rgba(50, 50, 65, 0.6);
-    border: 1px solid rgba(100, 100, 130, 0.3);
-    border-radius: 8px;
-    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    padding: 14px 16px;
+    background: rgba(60, 60, 80, 0.8);
+    border: 2px solid rgba(140, 130, 170, 0.5);
+    border-radius: 10px;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
     display: block;
-    font-size: 1.1em;
+    font-size: 1.15em;
+    margin-bottom: 12px;
 }
 
 .custom-summaryb:hover {
-    color: #d0c8e8;
-    background: rgba(60, 60, 75, 0.8);
-    border-color: rgba(140, 130, 170, 0.5);
+    color: #f0e8f8;
+    background: rgba(70, 70, 90, 0.95);
+    border-color: rgba(160, 150, 190, 0.7);
+    transform: translateX(4px);
+}
+
+.custom-detailsb[open] {
+    background: rgba(50, 50, 70, 0.9);
+    border-left-color: rgba(180, 170, 210, 0.9);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    padding: 8px 0 0 10px;
 }
 
 .info-nap {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin: 1em 0;
+    gap: 20px;
+    margin: 1.5em 0;
+    padding: 8px 0;
 }
 
 .b-nam {
-    border: 1px solid rgba(100, 100, 130, 0.4);
-    background: rgba(40, 40, 50, 0.8);
-    padding: 16px;
-    border-radius: 10px;
+    border: 2px solid rgba(140, 130, 170, 0.6);
+    background: rgba(50, 50, 65, 0.95);
+    padding: 24px;
+    border-radius: 12px;
     min-width: 200px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.b-nam:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(140, 130, 170, 0.3);
+    border-color: rgba(160, 150, 190, 0.8);
 }
 
 .b-nam p {
-    color: #d0c8e8;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    color: #e8e0f8;
     font-weight: 600;
-    margin: 0 0 10px 0;
-    border-bottom: 2px solid rgba(140, 130, 170, 0.4);
-    padding-bottom: 8px;
+    margin: 0 0 16px 0;
+    border-bottom: 2px solid rgba(160, 150, 190, 0.6);
+    padding-bottom: 12px;
+    font-size: 1.05em;
+    padding-block-end: 10px;
+}
+
+.b-nam ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
 }
 
 .b-nam li {
-    color: #c0c0d0;
-    margin: 6px 0;
-    padding-left: 8px;
+    display: block;
+    color: #e8e0f8;
+    margin: 10px 0;
+    padding: 10px 14px;
+    padding-left: 24px;
+    font-size: 0.95em;
+    background: rgba(60, 60, 80, 0.4);
+    border-left: 3px solid rgba(160, 150, 190, 0.6);
+    border-radius: 4px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    list-style: none;
+}
+
+.b-nam li:first-of-type {
+    margin-top: 10px;
+}
+
+.b-nam li:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.b-nam li:last-of-type {
+    margin-bottom: 5px;
+}
+
+.b-nam li:hover {
+    background: rgba(70, 70, 90, 0.6);
+    border-left-color: rgba(180, 170, 210, 0.8);
+    color: #f0e8f8;
+    width: max-content;
+    cursor: pointer;
+    margin-block-end: 5px;
 }
 
 /* Стили для изображений в гайдах */
@@ -1293,7 +1697,7 @@ code {
 
 #armorstand .rab-mesto-br > a {
     font-size: 24px;
-    color: rgb(133, 133, 133);
+    color: #b1a9a9;
     padding-block-end: 20px;
     text-decoration: solid;
     border-color: rgb(129, 123, 123);
@@ -1305,7 +1709,7 @@ code {
     padding: 2px;
     margin-left: 20px;
     margin-block-end: 10px;
-    color: #b1a9a9;
+    display: inline-block;
 }
 
 #crafts > p:first-child {
@@ -1472,7 +1876,7 @@ code {
     color: #b1a9a9;
 }
 
-#commands .rab-mesto-br > p:not(:first-child):not(:nth-child(2)):not(:nth-child(11)):not(:nth-child(14)):not(:nth-child(24)) {
+#commands .rab-mesto-br > p {
     font-size: 24px;
 }
 
@@ -1489,7 +1893,7 @@ code {
     color: #b1a9a9;
 }
 
-#limitfarm .rab-mesto-br > p:not(:first-child):not(:nth-child(2)):not(:nth-child(8)) {
+#limitfarm .rab-mesto-br > p {
     font-size: 24px;
 }
 
@@ -2238,16 +2642,12 @@ progress::-moz-progress-bar {
 }
 main{
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
     flex-direction: column;
     display: flex;
     flex-grow: 1;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 2px;
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
     padding-top: 10px;
 }
 .b37{
@@ -3100,15 +3500,11 @@ progress::-moz-progress-bar {
 }
 main{
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
     flex-direction: column;
     display: flex;
     flex-grow: 1;
     padding: 2%;
     border-radius: 2px;
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
     padding-top: 10px;
     margin: 0;
     width: 100%;
@@ -3233,3 +3629,5 @@ footer{
     .map{
         margin-left: 0px;
     }
+  }
+}
