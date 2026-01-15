@@ -1034,23 +1034,32 @@ details {
     margin: 1em 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    border-left: 3px solid rgba(140, 130, 170, 0.5);
 }
 
 summary {
     color: #c0b8d8;
     font-weight: 600;
     cursor: pointer;
-    padding: 10px;
+    padding: 12px;
     background: rgba(50, 50, 65, 0.6);
     border: 1px solid rgba(100, 100, 130, 0.3);
     border-radius: 8px;
     transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
 }
 
 summary:hover {
     color: #d0c8e8;
     background: rgba(60, 60, 75, 0.8);
     border-color: rgba(140, 130, 170, 0.5);
+}
+
+details[open] {
+    background: rgba(45, 45, 55, 0.8);
+    border-left-color: rgba(160, 150, 190, 0.7);
 }
 
 /* Стили для элементов Brewery гайда */
@@ -1266,6 +1275,222 @@ code {
     background: rgba(60, 60, 75, 0.9);
     border-color: rgba(140, 130, 170, 0.6);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для секций по их id (строки 658-800) */
+#armorstand .rab-mesto-br > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#armorstand .rab-mesto-br img {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-block-end: 20px;
+}
+
+#armorstand .rab-mesto-br > a {
+    font-size: 24px;
+    color: rgb(133, 133, 133);
+    padding-block-end: 20px;
+    text-decoration: solid;
+    border-color: rgb(129, 123, 123);
+    border-width: 2px;
+    border-style: solid;
+    max-width: fit-content;
+    border-radius: 5px;
+    height: min-content;
+    padding: 2px;
+    margin-left: 20px;
+    margin-block-end: 10px;
+    color: #b1a9a9;
+}
+
+#crafts > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: #b1a9a9;
+}
+
+#crafts .obimg {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 3%;
+    justify-content: center;
+}
+
+#vol .rab-mesto-br > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#vol .rab-mesto-br > p:nth-child(2) {
+    font-size: 24px;
+}
+
+#vol .rab-mesto-br > p:nth-child(3),
+#vol .rab-mesto-br > p:nth-child(4) {
+    display: flex;
+    padding-left: 2%;
+    font-size: 18px;
+}
+
+#vol .rab-mesto-br img:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-block-end: 40px;
+}
+
+#vol .rab-mesto-br img:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-block-end: 20px;
+}
+
+#shalk .rab-mesto-br > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#shalk .rab-mesto-br > p:nth-child(2) {
+    font-size: 24px;
+}
+
+#shalk .rab-mesto-br > p:nth-child(n+3) {
+    display: flex;
+    padding-left: 2%;
+    font-size: 24px;
+}
+
+#poch .rab-mesto-br > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#poch .rab-mesto-br > p:nth-child(2) {
+    font-size: 24px;
+}
+
+#poch .rab-mesto-br > p:nth-child(3),
+#poch .rab-mesto-br > p:nth-child(4),
+#poch .rab-mesto-br > p:nth-child(5) {
+    display: flex;
+    padding-left: 2%;
+    font-size: 18px;
+}
+
+#poch .rab-mesto-br img:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-block-end: 40px;
+}
+
+#poch .rab-mesto-br img:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-block-end: 20px;
+}
+
+#camech .rab-mesto-br > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#camech .rab-mesto-br > p:nth-child(2) {
+    font-size: 24px;
+}
+
+#camech .rab-mesto-br > p:nth-child(3) {
+    display: flex;
+    padding-left: 2%;
+    font-size: 18px;
+}
+
+#camech .rab-mesto-br img {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-block-end: 40px;
+}
+
+#gran .rab-mesto-br > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#gran .rab-mesto-br > p:nth-child(n+2) {
+    font-size: 24px;
+}
+
+#shitel .rab-mesto-br > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: #b1a9a9;
+}
+
+#shitel .rab-mesto-br > p:nth-child(n+2) {
+    font-size: 24px;
+}
+
+#shitel .rab-mesto-br img {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-block-end: 40px;
+}
+
+#commands .rab-mesto-br > p:first-child {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: #b1a9a9;
+}
+
+#commands .rab-mesto-br > p:nth-child(2),
+#commands .rab-mesto-br > p:nth-child(11),
+#commands .rab-mesto-br > p:nth-child(14),
+#commands .rab-mesto-br > p:nth-child(24) {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    color: #b1a9a9;
+}
+
+#commands .rab-mesto-br > p:not(:first-child):not(:nth-child(2)):not(:nth-child(11)):not(:nth-child(14)):not(:nth-child(24)) {
+    font-size: 24px;
+}
+
+#commands .rab-mesto-br > a.obsh-info {
+    font-size: 24px;
+}
+
+#limitfarm .rab-mesto-br > p:first-child,
+#limitfarm .rab-mesto-br > p:nth-child(2),
+#limitfarm .rab-mesto-br > p:nth-child(8) {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: #b1a9a9;
+}
+
+#limitfarm .rab-mesto-br > p:not(:first-child):not(:nth-child(2)):not(:nth-child(8)) {
+    font-size: 24px;
 }
 
 /* Скрываем footer */
